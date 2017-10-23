@@ -294,3 +294,462 @@ Processing by QuestsController#new as HTML
 Completed 200 OK in 588ms (Views: 584.5ms)
 
 
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-23 11:19:17 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (54.2ms)
+Completed 200 OK in 937ms (Views: 306.3ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-23 11:19:56 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 75ms (Views: 65.8ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-23 11:20:17 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 78ms (Views: 67.9ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-23 11:25:37 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 60ms (Views: 51.2ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-23 11:30:24 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kpfboSCDOWZ9vuedptcCWnSkq7iIuec+pD4W/FEwCRB8Ac+JmZadBX2JyvtZOXExf3k4LbvTOKDgLjiwneKLsw==", "quest"=>{"title"=>"seif", "text"=>"seif"}, "commit"=>"Save Quest"}
+No template found for QuestsController#create, rendering head :no_content
+Completed 204 No Content in 158ms
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-23 11:33:37 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 71ms (Views: 65.1ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-23 11:33:49 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KgbGSaXjDLYJro8PKs2sWnks4T3zqJQ3e9lGETnTbRvEkNJhHPao1QmZomnVI98xcvFyqMDCS6k/yWhd9QHvuA==", "quest"=>{"title"=>"seife", "text"=>"das ist die real seif"}, "commit"=>"Save Quest"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-23 11:34:18 +0200
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for QuestsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-23 11:34:28 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 50ms (Views: 45.1ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-23 11:40:18 +0200
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (23.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (22.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateQuests (20171023093808)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "quests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171023093808"]]
+  [1m[35m (20.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-23 09:43:55.790895"], ["updated_at", "2017-10-23 09:43:55.790895"]]
+  [1m[35m (23.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-23 11:44:01 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-23 11:45:36 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1DtObfhxm/RW4EC+6H+QnyHUTIPh+Y+FiFegzxEUUMc6rVpFQWQ/l1bXbdgXkeP0KgnfFtKTUBvMR46D3cbSZA==", "quest"=>{"title"=>"s", "description"=>"wie seife"}, "commit"=>"Save Quest"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-23 12:53:46 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1DtObfhxm/RW4EC+6H+QnyHUTIPh+Y+FiFegzxEUUMc6rVpFQWQ/l1bXbdgXkeP0KgnfFtKTUBvMR46D3cbSZA==", "quest"=>{"title"=>"s", "description"=>"wie seife"}, "commit"=>"Save Quest"}
+Completed 400 Bad Request in 6ms
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/quests_controller.rb:18:in `quest_params'
+app/controllers/quests_controller.rb:6:in `create'
+Started POST "/quests" for 127.0.0.1 at 2017-10-23 12:54:24 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1DtObfhxm/RW4EC+6H+QnyHUTIPh+Y+FiFegzxEUUMc6rVpFQWQ/l1bXbdgXkeP0KgnfFtKTUBvMR46D3cbSZA==", "quest"=>{"title"=>"s", "description"=>"wie seife"}, "commit"=>"Save Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[32mINSERT INTO "quests" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "s"], ["description", "wie seife"], ["created_at", "2017-10-23 10:54:24.591133"], ["updated_at", "2017-10-23 10:54:24.591133"]]
+  [1m[35m (24.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests/1
+Completed 302 Found in 48ms (ActiveRecord: 29.0ms)
+
+
+Started GET "/quests/1" for 127.0.0.1 at 2017-10-23 12:54:24 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <h1><%= @article.id %></h1>
+    2: 
+    3: <p>
+    4:   <strong>Title:</strong>
+  
+app/views/quests/show.html.erb:1:in `_app_views_quests_show_html_erb__1872551675957485782_69985336698100'
+Started GET "/quests/1" for 127.0.0.1 at 2017-10-23 12:55:33 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `text' for #<Quest:0x00000001fc8220>):
+     7: 
+     8: <p>
+     9:   <strong>Text:</strong>
+    10:   <%= @quest.text %>
+    11: </p>
+  
+app/views/quests/show.html.erb:10:in `_app_views_quests_show_html_erb__1872551675957485782_16538060'
+Started GET "/quests/1" for 127.0.0.1 at 2017-10-23 12:55:44 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 64ms (Views: 53.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-23 12:55:57 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 46ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-23 12:56:26 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DwGzWdWqYgxjoFZxDhLIDJRW9kyLyJkN+Tv1Epc6CLvhl6dxbL/Gb2OXexfx/Ltnn4tl2biiRpO9K9teW+iKGA==", "quest"=>{"title"=>"2nd quest", "description"=>"This quest is unlocked after s."}, "commit"=>"Save Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.2ms)[0m  [1m[32mINSERT INTO "quests" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2nd quest"], ["description", "This quest is unlocked after s."], ["created_at", "2017-10-23 10:56:26.114876"], ["updated_at", "2017-10-23 10:56:26.114876"]]
+  [1m[35m (30.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests/2
+Completed 302 Found in 47ms (ActiveRecord: 37.2ms)
+
+
+Started GET "/quests/2" for 127.0.0.1 at 2017-10-23 12:56:26 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 35.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/quests/" for 127.0.0.1 at 2017-10-23 13:09:02 +0200
+  
+SyntaxError (/mnt/c/Users/Chris/source/repos/DnDTools/app/controllers/quests_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/quests_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/quests/" for 127.0.0.1 at 2017-10-23 13:09:19 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 60ms (Views: 49.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/quests/" for 127.0.0.1 at 2017-10-23 13:10:00 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 63ms (Views: 56.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/quests/1" for 127.0.0.1 at 2017-10-23 13:10:07 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 49ms (Views: 40.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quests/2" for 127.0.0.1 at 2017-10-23 13:10:11 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 55ms (Views: 49.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-23 13:12:04 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 54ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-23 13:12:07 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 50ms (Views: 46.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests/1" for 127.0.0.1 at 2017-10-23 13:12:12 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 45.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-23 13:13:55 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 69ms (Views: 59.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-23 13:14:14 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 63ms (Views: 53.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-23 13:14:16 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 44ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-23 13:14:31 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jJj1MM14Nn/qOZch1K7qsi1CS9kvBbBwqQDtvWrzQnU8T75GRZNUTUFiE5UDM0WjMdzI9MK3b/HqLv04JCM6/g==", "quest"=>{"title"=>"3rd Quest", "description"=>"self explanatory"}, "commit"=>"Save Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  [1m[32mINSERT INTO "quests" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3rd Quest"], ["description", "self explanatory"], ["created_at", "2017-10-23 11:14:31.015994"], ["updated_at", "2017-10-23 11:14:31.015994"]]
+  [1m[35m (29.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests/3
+Completed 302 Found in 41ms (ActiveRecord: 32.6ms)
+
+
+Started GET "/quests/3" for 127.0.0.1 at 2017-10-23 13:14:31 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 36.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-23 13:14:35 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 48ms (Views: 44.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-23 13:16:16 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 55ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-23 13:16:18 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 75ms (Views: 70.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-23 13:16:23 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-23 13:16:29 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 40.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-23 13:16:35 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 51ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-23 13:16:42 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fXxXA8HRglaDAjIdPYHf1WI4H9XGNpu0p29H0tF//1PNqxx1STrgZChZtqnqHHDEfqac+CuERDXkQVdXn6+H2A==", "quest"=>{"title"=>"4", "description"=>"tasgagxx"}, "commit"=>"Save Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (8.9ms)[0m  [1m[32mINSERT INTO "quests" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "4"], ["description", "tasgagxx"], ["created_at", "2017-10-23 11:16:42.751328"], ["updated_at", "2017-10-23 11:16:42.751328"]]
+  [1m[35m (29.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests/4
+Completed 302 Found in 45ms (ActiveRecord: 37.9ms)
+
+
+Started GET "/quests/4" for 127.0.0.1 at 2017-10-23 13:16:42 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 33.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-23 13:16:47 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests/4" for 127.0.0.1 at 2017-10-23 13:16:51 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.9ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 41.5ms | ActiveRecord: 0.9ms)
+
+

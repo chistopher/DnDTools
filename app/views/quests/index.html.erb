@@ -1,0 +1,21 @@
+<h1>Quests</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+
+  <% @quests.each do |quest| %>
+    <tr>
+      <td><%= quest.id %></td>
+      <td><%= quest.title %></td>
+      <td><%= quest.description %></td>
+      <td><%= link_to 'Show', quest_path(quest) %></td>
+    </tr>
+  <% end %>
+</table>
+
+
+<%= link_to 'New Quest', new_quest_path %>

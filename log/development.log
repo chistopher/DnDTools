@@ -753,3 +753,1599 @@ Processing by QuestsController#show as HTML
 Completed 200 OK in 50ms (Views: 41.5ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-24 15:44:55 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (84.8ms)
+Completed 200 OK in 768ms (Views: 750.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-24 15:48:58 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G7M6vCH26H7Hydu/1z7yV54P1DjJXPPwy7+acI/ErRWrZHHKqR2KTGySXwsAo11GgpFXFSTuLHGIkYr1wRTVng==", "quest"=>{"title"=>"a", "description"=>"seife"}, "commit"=>"Save Quest"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 115ms (Views: 83.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 15:53:52 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 99ms (Views: 76.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-24 15:53:54 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    2: 
+    3: <%= form_with scope: :quest, url: quests_path, local: true do |form| %>
+    4: 
+    5:   <% if @article.errors.any? %>
+    6:   <div id="error_explanation">
+    7:     <h2>
+    8:       <%= pluralize(@article.errors.count, "error") %> prohibited
+  
+app/views/quests/new.html.erb:5:in `block in _app_views_quests_new_html_erb___3640019057421470533_69978409741540'
+app/views/quests/new.html.erb:3:in `_app_views_quests_new_html_erb___3640019057421470533_69978409741540'
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-24 15:54:20 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 119ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-24 15:54:26 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lxvyV3fPeEyGnpGIWuv2XNNx2eX22v6AUIsFMIhF7Xl5jeZ/ztrcL4apvO6lBYU32KxKcMWwIR4Umyt8RJdv2g==", "quest"=>{"title"=>"s", "description"=>"seife"}, "commit"=>"Save Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 68ms (Views: 63.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 15:55:59 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.2ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 84ms (Views: 67.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-24 15:56:05 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 69ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-24 15:56:14 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QEYiRnoaeq5xWXgTlxmz3qZw6srWxRavUEmp6RF7T5jwkWkw8vEYnNoC/KdAhBzPuu5p5zt3yS4TZ7lsX6s3Ew==", "quest"=>{"title"=>"2nd quest", "description"=>"seife"}, "commit"=>"Save Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? LIMIT ?[0m  [["title", "2nd quest"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 88ms (Views: 59.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-24 15:56:23 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JPYQKTDjMLPLuTg+vicOROzI2jS7EwcgvsMWSVJh0JjKYAQBifaU0MuOFVhByX0v5xVJoYh52L760zgFnrNSOw==", "quest"=>{"title"=>"s", "description"=>"seife"}, "commit"=>"Save Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? LIMIT ?[0m  [["title", "s"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 60ms (Views: 53.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 15:56:31 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 61ms (Views: 55.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quests/3" for 127.0.0.1 at 2017-10-24 15:56:33 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 78ms (Views: 48.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 15:56:43 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 53ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 15:56:46 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 62ms (Views: 55.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-24 15:59:13 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 64ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-24 15:59:16 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yq3rs+9t5yo9zY2FxxwZqSG9cF39XH3twxlVFEH+jVvSeqDFZ4aFGJaWCTEQgba4PSPzcBDuomyAN0WRDy710A==", "quest"=>{"title"=>"s", "description"=>""}, "commit"=>"Save Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? LIMIT ?[0m  [["title", "s"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 75ms (Views: 60.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-24 16:01:06 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jj+E2SIDnq5dsdnv3vXTKaeJXwfHl0AvBGZdXREZUjtgqZDxmxY6zV2G9IkhG6BCrFTMkvT9n7FAdnMR3cvQmA==", "quest"=>{"title"=>"", "description"=>""}, "commit"=>"Save Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? LIMIT ?[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 100ms (Views: 90.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:07:03 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 92ms (Views: 74.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:07:10 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (2.8ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    2: 
+    3: <%= form_with(model: @article) do |form| %>
+    4: 
+    5:   <% if @article.errors.any? %>
+    6:     <div id="error_explanation">
+    7:       <h2>
+    8:         <%= pluralize(@article.errors.count, "error") %> prohibited
+  
+app/views/quests/edit.html.erb:5:in `block in _app_views_quests_edit_html_erb___4213345505752011031_69978424949620'
+app/views/quests/edit.html.erb:3:in `_app_views_quests_edit_html_erb___4213345505752011031_69978424949620'
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:07:33 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.8ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 147ms (Views: 127.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:07:39 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 63ms (Views: 55.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:07:43 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 88ms (Views: 74.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:07:50 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.8ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 93ms (Views: 79.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:08:19 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.8ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 121ms (Views: 106.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:08:21 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 72ms (Views: 65.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests/3/edit" for 127.0.0.1 at 2017-10-24 16:08:22 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 66ms (Views: 60.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:08:24 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 78ms (Views: 69.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:08:27 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 69ms (Views: 61.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:08:42 +0200
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for QuestsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:08:48 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (1.1ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 87ms (Views: 79.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:08:50 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 68ms (Views: 62.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:08:52 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 81ms (Views: 76.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:15:21 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 114ms (Views: 84.7ms | ActiveRecord: 3.3ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:15:26 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VdWGLoDL8FMx0YkNY+MT+taixyeaY4ui9/80XFDa4UXq67A5M0U0TAgv18gwVjjycwgYsms88xR7MC+PwmciPg==", "quest"=>{"title"=>"4th quest", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4th quest"], ["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (5.1ms)[0m  [1m[33mUPDATE "quests" SET "title" = ?, "updated_at" = ? WHERE "quests"."id" = ?[0m  [["title", "4th quest"], ["updated_at", "2017-10-24 14:15:26.863977"], ["id", 4]]
+  [1m[35m (19.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests/4
+Completed 200 OK in 39ms (ActiveRecord: 25.5ms)
+
+
+Started GET "/quests/4" for 127.0.0.1 at 2017-10-24 16:15:26 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 78ms (Views: 68.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:15:31 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (1.5ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 78ms (Views: 66.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:15:32 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 66ms (Views: 56.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests/4" for 127.0.0.1 at 2017-10-24 16:15:36 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 84ms (Views: 70.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quests/4" for 127.0.0.1 at 2017-10-24 16:16:34 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 94ms (Views: 82.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:16:38 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 53ms (Views: 47.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:16:42 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 61ms (Views: 55.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:16:44 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 87ms (Views: 79.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests/3" for 127.0.0.1 at 2017-10-24 16:16:45 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 62ms (Views: 53.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests/3/edit" for 127.0.0.1 at 2017-10-24 16:16:47 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuest Load (1.1ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 61ms (Views: 52.7ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:16:53 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ix0hVu18BDcNsu0DBsUSnI8zcG0JrqgRwduBguU6wGXbCrVNf24Gf/HCxgYAaT22nYl+lQMCFdc0nCJsiXD89g==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 90ms (Views: 81.9ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:16:56 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ix0hVu18BDcNsu0DBsUSnI8zcG0JrqgRwduBguU6wGXbCrVNf24Gf/HCxgYAaT22nYl+lQMCFdc0nCJsiXD89g==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 88ms (Views: 80.8ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:16:58 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ix0hVu18BDcNsu0DBsUSnI8zcG0JrqgRwduBguU6wGXbCrVNf24Gf/HCxgYAaT22nYl+lQMCFdc0nCJsiXD89g==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 88ms (Views: 82.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:17:01 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 77ms (Views: 70.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quests/3/edit" for 127.0.0.1 at 2017-10-24 16:17:04 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 76ms (Views: 69.1ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:17:09 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LCFkpzGfgmrA/BTnYgO5AgWe7g7OXYIfqMi1Sj1M/UrUNvC8o42AIjyMP+Jkr5YoFyTg9sTxP9ldjxakUQbB2Q==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 87ms (Views: 81.0ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:18:24 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LCFkpzGfgmrA/BTnYgO5AgWe7g7OXYIfqMi1Sj1M/UrUNvC8o42AIjyMP+Jkr5YoFyTg9sTxP9ldjxakUQbB2Q==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 133ms (Views: 122.0ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:18:25 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LCFkpzGfgmrA/BTnYgO5AgWe7g7OXYIfqMi1Sj1M/UrUNvC8o42AIjyMP+Jkr5YoFyTg9sTxP9ldjxakUQbB2Q==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 88ms (Views: 82.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:18:27 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 87ms (Views: 77.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quests/3/edit" for 127.0.0.1 at 2017-10-24 16:18:31 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 74ms (Views: 66.1ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:18:36 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nvVac5d6YsMowHDQwDxhsejCAuZ3u891sZitm+Ahp8dm4s5oBWhgi9SwW9XGkE6b+ngMHn0XcrNE3w51jGubVA==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 88ms (Views: 81.0ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:22:09 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nvVac5d6YsMowHDQwDxhsejCAuZ3u891sZitm+Ahp8dm4s5oBWhgi9SwW9XGkE6b+ngMHn0XcrNE3w51jGubVA==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.8ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 151ms (Views: 135.8ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:22:13 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nvVac5d6YsMowHDQwDxhsejCAuZ3u891sZitm+Ahp8dm4s5oBWhgi9SwW9XGkE6b+ngMHn0XcrNE3w51jGubVA==", "quest"=>{"title"=>"3", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 92ms (Views: 85.2ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:22:40 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nvVac5d6YsMowHDQwDxhsejCAuZ3u891sZitm+Ahp8dm4s5oBWhgi9SwW9XGkE6b+ngMHn0XcrNE3w51jGubVA==", "quest"=>{"title"=>"3", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.8ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 173ms (Views: 159.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:22:41 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 77ms (Views: 68.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests/3/edit" for 127.0.0.1 at 2017-10-24 16:22:45 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 86ms (Views: 78.0ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:24:01 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hP25uEEa25VMqEfEYfKo8EO1HkFWEgd+lveNaVPuQ1d86i2j0wjZ3bDYbMFnXofaUQ8QuVy+urhjsC6HP6R/xA==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 199ms (Views: 159.7ms | ActiveRecord: 5.4ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:25:06 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hP25uEEa25VMqEfEYfKo8EO1HkFWEgd+lveNaVPuQ1d86i2j0wjZ3bDYbMFnXofaUQ8QuVy+urhjsC6HP6R/xA==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 131ms (Views: 102.5ms | ActiveRecord: 3.7ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:26:33 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hP25uEEa25VMqEfEYfKo8EO1HkFWEgd+lveNaVPuQ1d86i2j0wjZ3bDYbMFnXofaUQ8QuVy+urhjsC6HP6R/xA==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 99ms (Views: 81.3ms | ActiveRecord: 2.2ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:26:51 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hP25uEEa25VMqEfEYfKo8EO1HkFWEgd+lveNaVPuQ1d86i2j0wjZ3bDYbMFnXofaUQ8QuVy+urhjsC6HP6R/xA==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 90ms (Views: 84.1ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:27:22 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hP25uEEa25VMqEfEYfKo8EO1HkFWEgd+lveNaVPuQ1d86i2j0wjZ3bDYbMFnXofaUQ8QuVy+urhjsC6HP6R/xA==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 157ms (Views: 147.0ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:29:18 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hP25uEEa25VMqEfEYfKo8EO1HkFWEgd+lveNaVPuQ1d86i2j0wjZ3bDYbMFnXofaUQ8QuVy+urhjsC6HP6R/xA==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 94ms (Views: 88.7ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:32:02 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hP25uEEa25VMqEfEYfKo8EO1HkFWEgd+lveNaVPuQ1d86i2j0wjZ3bDYbMFnXofaUQ8QuVy+urhjsC6HP6R/xA==", "quest"=>{"title"=>"3rd", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "3rd"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 137ms (Views: 105.4ms | ActiveRecord: 4.3ms)
+
+
+Started PATCH "/quests/3" for 127.0.0.1 at 2017-10-24 16:32:13 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hP25uEEa25VMqEfEYfKo8EO1HkFWEgd+lveNaVPuQ1d86i2j0wjZ3bDYbMFnXofaUQ8QuVy+urhjsC6HP6R/xA==", "quest"=>{"title"=>"s", "description"=>"self explanatory"}, "commit"=>"Update Quest", "id"=>"3"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "s"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 95ms (Views: 86.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:36:02 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.8ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 185ms (Views: 157.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-24 16:36:04 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 83ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-24 16:36:08 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8hx2TRpI19/oVmg3gYTyN/ndAUkekPjQcSNAYp4VxEdCyz07kqO17UMN7INWGV0m5UOCZPMiJ1EyDVDn0MW8zA==", "quest"=>{"title"=>"s", "description"=>""}, "commit"=>"Save Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? LIMIT ?[0m  [["title", "s"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 71ms (Views: 58.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:36:49 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 97ms (Views: 88.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:36:52 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 64ms (Views: 55.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:36:58 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HTE3O+US9CkxOXz5GvYLNfbAZMqJiGDaDooxOgSdEpKiDwEsVpwwNgjHIjxJQyA9U2q7X3jXGGyCRSrpliDR6Q==", "quest"=>{"title"=>"s", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "s"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 103ms (Views: 82.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:37:28 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 113ms (Views: 103.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:37:29 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 83ms (Views: 70.9ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:37:35 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BuhsjLoia9aK2rPYXM5ghlIcdUkD88Q68Vuziy6JJ/S51lqbCayvybMk7R0Pe0uO97aq3PKsvIx9lKhYvDTkjw==", "quest"=>{"title"=>"s", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "s"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 89ms (Views: 82.8ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:37:40 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BuhsjLoia9aK2rPYXM5ghlIcdUkD88Q68Vuziy6JJ/S51lqbCayvybMk7R0Pe0uO97aq3PKsvIx9lKhYvDTkjw==", "quest"=>{"title"=>"s", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "s"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 164ms (Views: 151.0ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:37:42 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BuhsjLoia9aK2rPYXM5ghlIcdUkD88Q68Vuziy6JJ/S51lqbCayvybMk7R0Pe0uO97aq3PKsvIx9lKhYvDTkjw==", "quest"=>{"title"=>"s", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "s"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 90ms (Views: 81.3ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:37:44 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BuhsjLoia9aK2rPYXM5ghlIcdUkD88Q68Vuziy6JJ/S51lqbCayvybMk7R0Pe0uO97aq3PKsvIx9lKhYvDTkjw==", "quest"=>{"title"=>"s", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "s"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 91ms (Views: 83.2ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:37:45 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BuhsjLoia9aK2rPYXM5ghlIcdUkD88Q68Vuziy6JJ/S51lqbCayvybMk7R0Pe0uO97aq3PKsvIx9lKhYvDTkjw==", "quest"=>{"title"=>"s", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "s"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 91ms (Views: 82.0ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:37:46 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BuhsjLoia9aK2rPYXM5ghlIcdUkD88Q68Vuziy6JJ/S51lqbCayvybMk7R0Pe0uO97aq3PKsvIx9lKhYvDTkjw==", "quest"=>{"title"=>"s", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "s"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 100ms (Views: 88.3ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:37:46 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BuhsjLoia9aK2rPYXM5ghlIcdUkD88Q68Vuziy6JJ/S51lqbCayvybMk7R0Pe0uO97aq3PKsvIx9lKhYvDTkjw==", "quest"=>{"title"=>"s", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "s"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 86ms (Views: 76.3ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:37:47 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BuhsjLoia9aK2rPYXM5ghlIcdUkD88Q68Vuziy6JJ/S51lqbCayvybMk7R0Pe0uO97aq3PKsvIx9lKhYvDTkjw==", "quest"=>{"title"=>"s", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "s"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 84ms (Views: 77.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:37:48 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BuhsjLoia9aK2rPYXM5ghlIcdUkD88Q68Vuziy6JJ/S51lqbCayvybMk7R0Pe0uO97aq3PKsvIx9lKhYvDTkjw==", "quest"=>{"title"=>"s", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "s"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 86ms (Views: 79.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:39:05 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.8ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 94ms (Views: 83.1ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:39:12 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBx2/0FsJ4rNycAaLDpLiOFhXrM3vVTXxtxKywtU6ShCimLX+HmD6c3+7XzT1Djj6rzNJgTXi0mCzGSHx4Zriw==", "quest"=>{"title"=>"4t", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4t"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 91ms (Views: 82.0ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:39:14 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBx2/0FsJ4rNycAaLDpLiOFhXrM3vVTXxtxKywtU6ShCimLX+HmD6c3+7XzT1Djj6rzNJgTXi0mCzGSHx4Zriw==", "quest"=>{"title"=>"4t", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4t"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 87ms (Views: 81.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:39:14 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBx2/0FsJ4rNycAaLDpLiOFhXrM3vVTXxtxKywtU6ShCimLX+HmD6c3+7XzT1Djj6rzNJgTXi0mCzGSHx4Zriw==", "quest"=>{"title"=>"4t", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4t"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 88ms (Views: 82.4ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:39:15 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBx2/0FsJ4rNycAaLDpLiOFhXrM3vVTXxtxKywtU6ShCimLX+HmD6c3+7XzT1Djj6rzNJgTXi0mCzGSHx4Zriw==", "quest"=>{"title"=>"4t", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4t"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 86ms (Views: 80.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:39:15 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBx2/0FsJ4rNycAaLDpLiOFhXrM3vVTXxtxKywtU6ShCimLX+HmD6c3+7XzT1Djj6rzNJgTXi0mCzGSHx4Zriw==", "quest"=>{"title"=>"4t", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4t"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 95ms (Views: 89.2ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:39:15 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBx2/0FsJ4rNycAaLDpLiOFhXrM3vVTXxtxKywtU6ShCimLX+HmD6c3+7XzT1Djj6rzNJgTXi0mCzGSHx4Zriw==", "quest"=>{"title"=>"4t", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4t"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 88ms (Views: 80.0ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:41:43 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBx2/0FsJ4rNycAaLDpLiOFhXrM3vVTXxtxKywtU6ShCimLX+HmD6c3+7XzT1Djj6rzNJgTXi0mCzGSHx4Zriw==", "quest"=>{"title"=>"4t", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4t"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 106ms (Views: 86.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:43:21 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.8ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 101ms (Views: 88.7ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:43:26 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wkV8gfGT1SDVWBY3UPDEnvg1TwYglH4nqv/c9Paj98gs02ipSIZxQ9VvO1GvHrf18+jckxP+obnu7/K4OnF1aw==", "quest"=>{"title"=>"4tt", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4tt"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 91ms (Views: 85.0ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:43:28 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wkV8gfGT1SDVWBY3UPDEnvg1TwYglH4nqv/c9Paj98gs02ipSIZxQ9VvO1GvHrf18+jckxP+obnu7/K4OnF1aw==", "quest"=>{"title"=>"4tt", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4tt"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 92ms (Views: 84.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:43:55 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 99ms (Views: 73.7ms | ActiveRecord: 2.9ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:44:00 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gn/UsYNQtSVVPcSqDORepB/gCrYcbAdfdA1sf07r3C706cCZOkURRlUK6czzCi3PFD2ZIy8G2MEwHUIzgjlejQ==", "quest"=>{"title"=>"4t", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4t"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 101ms (Views: 91.6ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:44:00 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gn/UsYNQtSVVPcSqDORepB/gCrYcbAdfdA1sf07r3C706cCZOkURRlUK6czzCi3PFD2ZIy8G2MEwHUIzgjlejQ==", "quest"=>{"title"=>"4t", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4t"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 92ms (Views: 81.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:48:17 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (1.2ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 97ms (Views: 84.6ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:48:24 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lA/sI7yIfWC0Hf0Bf2fV5PfsJVzqcxW5IuYmJuskBE96mfgLBZ3ZA7Qq0GeAiaaP/DG2ydkZyidm9ghqJ/aG7A==", "quest"=>{"title"=>"4th qu", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4th qu"], ["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (2.8ms)[0m  [1m[33mUPDATE "quests" SET "title" = ?, "updated_at" = ? WHERE "quests"."id" = ?[0m  [["title", "4th qu"], ["updated_at", "2017-10-24 14:48:24.147259"], ["id", 4]]
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests/4
+Completed 200 OK in 29ms (ActiveRecord: 19.5ms)
+
+
+Started GET "/quests/4" for 127.0.0.1 at 2017-10-24 16:48:24 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 74ms (Views: 66.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quests/4/edit" for 127.0.0.1 at 2017-10-24 16:48:26 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 74ms (Views: 66.4ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:48:30 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r/OTXoMvwtX7J0EYNGnfV8wYGOIKxRIStOjWnE14ufsQzaVJMKEGysLZH91n3PRfabLHd/uaaqQ4J81P38V6gA==", "quest"=>{"title"=>"4th", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4th"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 90ms (Views: 78.9ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:48:31 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r/OTXoMvwtX7J0EYNGnfV8wYGOIKxRIStOjWnE14ufsQzaVJMKEGysLZH91n3PRfabLHd/uaaqQ4J81P38V6gA==", "quest"=>{"title"=>"4th", "description"=>"tasgagxx"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4th"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 85ms (Views: 79.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/quests/4" for 127.0.0.1 at 2017-10-24 16:51:21 +0200
+Processing by QuestsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r/OTXoMvwtX7J0EYNGnfV8wYGOIKxRIStOjWnE14ufsQzaVJMKEGysLZH91n3PRfabLHd/uaaqQ4J81P38V6gA==", "quest"=>{"title"=>"4th", "description"=>"aaaaaaaaaa"}, "commit"=>"Update Quest", "id"=>"4"}
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "4th"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 138ms (Views: 102.0ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:57:50 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 67ms (Views: 58.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-24 16:57:53 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/_form.html.erb (2.1ms)
+  Rendered quests/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 63ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-24 16:57:59 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OkEfPEnoqkJVtpv8TdGazv3aYA74HrkzmJfFGiV1KzOKllRKwQPIcP7tH0iaTDXf4UTjIxWsZrLbudWfa6VTuA==", "quest"=>{"title"=>"aaa", "description"=>""}, "commit"=>"Create Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? LIMIT ?[0m  [["title", "aaa"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/_form.html.erb (3.2ms)
+  Rendered quests/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 65ms (Views: 56.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:58:38 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 95ms (Views: 82.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-24 16:58:42 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/_form.html.erb (4.4ms)
+  Rendered quests/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 61ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-24 16:58:47 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y8waLZhG/sczfxesWYK4lPfA85QQOHV+zX91KUz+jO3TG1FbEK2c9ZgkkxiOHxeF615wuf2Kqv+OUWWsAi70Zg==", "quest"=>{"title"=>"3", "description"=>""}, "commit"=>"Create Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? LIMIT ?[0m  [["title", "3"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/_form.html.erb (1.6ms)
+  Rendered quests/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 68ms (Views: 58.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-24 16:58:57 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"md77PRkl2wM+dxTqoJneEa8+5IJl3JqkoGsbT5N0eWZ3SO8VoDB/YD5AOYxfd616pON3F1a2RTrkezUDX6b7xQ==", "quest"=>{"title"=>"a new quest", "description"=>"des"}, "commit"=>"Create Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? LIMIT ?[0m  [["title", "a new quest"], ["LIMIT", 1]]
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "quests" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "a new quest"], ["description", "des"], ["created_at", "2017-10-24 14:58:57.950876"], ["updated_at", "2017-10-24 14:58:57.950876"]]
+  [1m[35m (22.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests/5
+Completed 302 Found in 34ms (ActiveRecord: 26.1ms)
+
+
+Started GET "/quests/5" for 127.0.0.1 at 2017-10-24 16:58:57 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 52ms (Views: 46.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests/5/edit" for 127.0.0.1 at 2017-10-24 16:59:04 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mQuest Load (0.9ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/_form.html.erb (1.8ms)
+  Rendered quests/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 64ms (Views: 53.4ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/quests/5" for 127.0.0.1 at 2017-10-24 16:59:09 +0200
+Processing by QuestsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2ChWgW5oskSzoTu32BRsO8SqBAZQg6J9p78e002JXZYNdc0UN4cwwc91bVwwf69dBUCdE2HJUBLZqh1x983mPw==", "quest"=>{"title"=>"a n", "description"=>"des"}, "commit"=>"Update Quest", "id"=>"5"}
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "a n"], ["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/_form.html.erb (1.8ms)
+  Rendered quests/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 68ms (Views: 55.8ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/quests/5" for 127.0.0.1 at 2017-10-24 16:59:20 +0200
+Processing by QuestsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d8YSBHGo9AbVGYcuSGNwey7hVPB0bJoCTGSzrdW9SDiZUAYsyL1QZdUuqki3jQMQJTzHZUcGRZwIdJ3hGW/Kmw==", "quest"=>{"title"=>"", "description"=>""}, "commit"=>"Update Quest", "id"=>"5"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", ""], ["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/_form.html.erb (3.5ms)
+  Rendered quests/edit.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 70ms (Views: 59.1ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/quests/5" for 127.0.0.1 at 2017-10-24 16:59:35 +0200
+Processing by QuestsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sCMBh7mWqDVH1UW5uSe6m9sqRD+hE297rHgRgxA3i+ZetRWvAIMMVkfiaN9Gycnw0PfXqpJ5sOXoaD/P3OUJRQ==", "quest"=>{"title"=>"i forgot the old name", "description"=>"troll"}, "commit"=>"Update Quest", "id"=>"5"}
+  [1m[36mQuest Load (1.1ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "i forgot the old name"], ["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (2.2ms)[0m  [1m[33mUPDATE "quests" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "quests"."id" = ?[0m  [["title", "i forgot the old name"], ["description", "troll"], ["updated_at", "2017-10-24 14:59:35.764606"], ["id", 5]]
+  [1m[35m (18.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests/5
+Completed 302 Found in 33ms (ActiveRecord: 23.2ms)
+
+
+Started GET "/quests/5" for 127.0.0.1 at 2017-10-24 16:59:35 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 54ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 16:59:38 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 61ms (Views: 50.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-24 17:00:49 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/_form.html.erb (3.1ms)
+  Rendered quests/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 106ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-24 17:00:54 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H5hh/p5wYYhTxS4zozFkHzfi3wt8hOyIOXpB4JMgZ5ivTyqIFpsDuvieqod0rMsOK3xcJpE2Mwl6VFFl3fAfEw==", "quest"=>{"title"=>"six letters", "description"=>""}, "commit"=>"Create Quest"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? LIMIT ?[0m  [["title", "six letters"], ["LIMIT", 1]]
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "quests" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "six letters"], ["description", ""], ["created_at", "2017-10-24 15:00:54.279126"], ["updated_at", "2017-10-24 15:00:54.279126"]]
+  [1m[35m (19.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests/6
+Completed 302 Found in 38ms (ActiveRecord: 23.3ms)
+
+
+Started GET "/quests/6" for 127.0.0.1 at 2017-10-24 17:00:54 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 54ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 17:00:56 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 61ms (Views: 55.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/quests/6/edit" for 127.0.0.1 at 2017-10-24 17:01:19 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/_form.html.erb (3.0ms)
+  Rendered quests/edit.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 101ms (Views: 91.6ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/quests/6" for 127.0.0.1 at 2017-10-24 17:01:21 +0200
+Processing by QuestsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kky5wszrqb0BHMxCARQ0hHI+kuhgM5/kuVJE8xi82l1oFi2tC+c9Swj2Y5sDcguY69lHZ/6rXJSMWTV4riXO2Q==", "quest"=>{"title"=>"six letters", "description"=>""}, "commit"=>"Update Quest", "id"=>"6"}
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "six letters"], ["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests/6
+Completed 302 Found in 16ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/quests/6" for 127.0.0.1 at 2017-10-24 17:01:21 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 57ms (Views: 51.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 17:01:22 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 71ms (Views: 66.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/quests/6/edit" for 127.0.0.1 at 2017-10-24 17:01:28 +0200
+Processing by QuestsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering quests/edit.html.erb within layouts/application
+  Rendered quests/_form.html.erb (1.6ms)
+  Rendered quests/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 64ms (Views: 57.2ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/quests/6" for 127.0.0.1 at 2017-10-24 17:01:32 +0200
+Processing by QuestsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mtpT54XY+sXa4uUfnmgWolqGQeguzK0t+w2jzbfQMWZggMeIQtRuM9MISsacDim+w2GUZ7BUbl3OBtJGAUkl4g==", "quest"=>{"title"=>"six letters", "description"=>"haha"}, "commit"=>"Update Quest", "id"=>"6"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? AND ("quests"."id" != ?) LIMIT ?[0m  [["title", "six letters"], ["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (1.9ms)[0m  [1m[33mUPDATE "quests" SET "description" = ?, "updated_at" = ? WHERE "quests"."id" = ?[0m  [["description", "haha"], ["updated_at", "2017-10-24 15:01:32.096965"], ["id", 6]]
+  [1m[35m (22.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests/6
+Completed 302 Found in 39ms (ActiveRecord: 25.9ms)
+
+
+Started GET "/quests/6" for 127.0.0.1 at 2017-10-24 17:01:32 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 52ms (Views: 45.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 17:01:38 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 56ms (Views: 52.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 17:01:51 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 56ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 17:01:54 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 57ms (Views: 50.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 17:08:42 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.2ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (189.0ms)
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `article' for #<#<Class:0x007f4a3853edd0>:0x007f4a3853d110>):
+    14:       <td><%= quest.description %></td>
+    15:       <td><%= link_to 'Show', quest_path(quest) %></td>
+    16:       <td><%= link_to 'Edit', edit_quest_path(quest) %></td>
+    17:       <td><%= link_to 'Destroy', article_path(article),
+    18:               method: :delete,
+    19:               data: { confirm: 'Are you sure?' } %></td>
+    20:     </tr>
+  
+app/views/quests/index.html.erb:17:in `block in _app_views_quests_index_html_erb__200785910577014265_69978374667060'
+app/views/quests/index.html.erb:10:in `_app_views_quests_index_html_erb__200785910577014265_69978374667060'
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 17:09:25 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 77ms (Views: 65.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/quests/6" for 127.0.0.1 at 2017-10-24 17:09:37 +0200
+Processing by QuestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hAkKgpp9KGtdEMd45z8TSmoqaweHhkE5JZqdPXhxi9hqnx6qI2iMCF0n6h4Y0WAhYff4krTsnqdhirNxtKMJew==", "id"=>"6"}
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.3ms)[0m  [1m[31mDELETE FROM "quests" WHERE "quests"."id" = ?[0m  [["id", 6]]
+  [1m[35m (21.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests
+Completed 302 Found in 34ms (ActiveRecord: 27.6ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 17:09:37 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 63ms (Views: 58.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quests/new" for 127.0.0.1 at 2017-10-24 17:09:41 +0200
+Processing by QuestsController#new as HTML
+  Rendering quests/new.html.erb within layouts/application
+  Rendered quests/_form.html.erb (3.1ms)
+  Rendered quests/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 69ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/quests" for 127.0.0.1 at 2017-10-24 17:09:47 +0200
+Processing by QuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E36whnztSS3/I7Fn+ijh1Q3lDlC7yxdZiIVJefcNUiajqfvw9AYrH1R4NdMttU7EEXuNfVZ5yNjLq1n8ud0qrQ==", "quest"=>{"title"=>"6th quest is done", "description"=>""}, "commit"=>"Create Quest"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuest Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "quests" WHERE "quests"."title" = ? LIMIT ?[0m  [["title", "6th quest is done"], ["LIMIT", 1]]
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "quests" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "6th quest is done"], ["description", ""], ["created_at", "2017-10-24 15:09:47.853470"], ["updated_at", "2017-10-24 15:09:47.853470"]]
+  [1m[35m (17.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests/7
+Completed 302 Found in 33ms (ActiveRecord: 22.1ms)
+
+
+Started GET "/quests/7" for 127.0.0.1 at 2017-10-24 17:09:47 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 56ms (Views: 50.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 17:09:50 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 56ms (Views: 51.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/quests/5" for 127.0.0.1 at 2017-10-24 17:09:56 +0200
+Processing by QuestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dSpP+9iEANS5JsgCaDT6nZviV8fyLKOEbpNYjEzuqiibvFvTYZGkt7kR5WSX2on2kD/EUsFGfBoqg3bAgDwoiw==", "id"=>"5"}
+  [1m[36mQuest Load (0.6ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.2ms)[0m  [1m[31mDELETE FROM "quests" WHERE "quests"."id" = ?[0m  [["id", 5]]
+  [1m[35m (23.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests
+Completed 302 Found in 42ms (ActiveRecord: 30.3ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 17:09:56 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 61ms (Views: 54.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/quests/7" for 127.0.0.1 at 2017-10-24 17:10:01 +0200
+Processing by QuestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5/+lXjgZ5fji5UO332kz4SIgd9d7GfqDqmSX+42BZ3YJabF2gQxBm+LSbtEgh0CKKf3kQkhzJR3udLm3QVPl1Q==", "id"=>"7"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.7ms)[0m  [1m[31mDELETE FROM "quests" WHERE "quests"."id" = ?[0m  [["id", 7]]
+  [1m[35m (19.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/quests
+Completed 302 Found in 36ms (ActiveRecord: 27.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-24 17:10:01 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 58ms (Views: 53.3ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateNpcs (20171024152029)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "npcs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (3.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171024152029"]]
+  [1m[35m (25.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateJoinTableQuestNpc (20171024152927)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "NPCs_Quests" ("Quest_id" integer NOT NULL, "NPC_id" integer NOT NULL)[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171024152927"]]
+  [1m[35m (20.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateJoinTableQuestNpc (20171024152927)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.9ms)[0m  [1m[35mDROP TABLE "NPCs_Quests"[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20171024152927"]]
+  [1m[35m (28.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateNpcs (20171024152029)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (8.6ms)[0m  [1m[35mDROP TABLE "npcs"[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20171024152029"]]
+  [1m[35m (24.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateNpcs (20171024152029)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "npcs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171024152029"]]
+  [1m[35m (25.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateJoinTableQuestNpc (20171024152927)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "quests_npcs" ("quest_id" integer, "npc_id" integer)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_quests_npcs_on_quest_id" ON "quests_npcs" ("quest_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_quests_npcs_on_quest_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_quests_npcs_on_quest_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_quests_npcs_on_npc_id" ON "quests_npcs" ("npc_id")[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171024152927"]]
+  [1m[35m (20.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_quests_npcs_on_npc_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_quests_npcs_on_npc_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_quests_npcs_on_quest_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_quests_npcs_on_quest_id' AND type='index'
+[0m

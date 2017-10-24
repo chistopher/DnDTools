@@ -10,13 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171023093808) do
+ActiveRecord::Schema.define(version: 20171024152927) do
+
+  create_table "npcs", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "quests", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "quests_npcs", id: false, force: :cascade do |t|
+    t.integer "quest_id"
+    t.integer "npc_id"
+    t.index ["npc_id"], name: "index_quests_npcs_on_npc_id"
+    t.index ["quest_id"], name: "index_quests_npcs_on_quest_id"
   end
 
 end

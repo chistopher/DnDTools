@@ -24,3 +24,8 @@
 <%= link_to 'New Quest', new_quest_path %>
 
 <p><%= link_to 'Back', root_path %></p>
+
+
+<% if admin? %>
+  <h1>Admin Secret Message</h1>
+<% end %>

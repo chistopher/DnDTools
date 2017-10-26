@@ -3266,3 +3266,1624 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 54ms (Views: 47.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-10-26 16:38:46 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 663ms (Views: 652.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 16:38:56 +0200
+Processing by NpcsController#index as HTML
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<NpcsController:0x007f04ad6363a8>):
+  
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.4) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-26 16:39:59 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 71ms (Views: 64.4ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 16:40:12 +0200
+Processing by NpcsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 16:40:42 +0200
+Processing by NpcsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 16:40:59 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.2ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 157ms (Views: 82.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 16:41:06 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.3ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 73ms (Views: 61.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 16:59:53 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 61ms (Views: 56.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 16:59:58 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 70ms (Views: 63.3ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:00:01 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 68ms (Views: 62.6ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:00:27 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 311ms (Views: 301.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:00:30 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 63ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:00:31 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 65ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:00:32 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 57ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:00:32 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 58ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:00:32 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 61ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:01:26 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.4ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 109ms (Views: 65.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:01:28 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 65ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:01:29 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 70ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:01:31 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (1.2ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 81ms (Views: 73.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:02:26 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 69ms (Views: 64.9ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:02:28 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 74ms (Views: 69.7ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:02:46 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 76ms (Views: 71.6ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:02:47 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 69ms (Views: 61.9ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:02:47 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.3ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 79ms (Views: 67.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:02:48 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 65ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:02:56 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 67ms (Views: 60.6ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:02:56 +0200
+Processing by NpcsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:03:03 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 66ms (Views: 59.1ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:03:04 +0200
+Processing by NpcsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:03:06 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 57ms (Views: 53.3ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:03:07 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 62ms (Views: 57.3ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:03:08 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 69ms (Views: 65.3ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:04:02 +0200
+Processing by NpcsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:04:04 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 73ms (Views: 68.8ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:04:05 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 65ms (Views: 53.3ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:06:09 +0200
+  
+SyntaxError (/mnt/c/Users/Chris/source/repos/DnDTools/app/controllers/welcome_controller.rb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  before_action :authenticate only: :auth
+                                  ^):
+  
+app/controllers/welcome_controller.rb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:07:32 +0200
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:08:36 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 60ms (Views: 55.6ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:08:39 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.3ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 95ms (Views: 81.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:08:41 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 66ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:08:43 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.3ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 65ms (Views: 58.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:08:45 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 64ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:08:59 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.3ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 73ms (Views: 62.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:09:01 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 69ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:09:02 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 68ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:09:02 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 61ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:09:03 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 70ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:09:12 +0200
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:09:14 +0200
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:11:05 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 62ms (Views: 57.8ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:11:06 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 74ms (Views: 65.9ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:11:07 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.2ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 83ms (Views: 68.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:11:14 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 64ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:11:16 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.6ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 70ms (Views: 64.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:11:21 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 67ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:11:22 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 73ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:11:35 +0200
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2017-10-26 17:12:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:12:35 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:12:40 +0200
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:13:04 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:16:01 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 93ms (Views: 85.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:16:02 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.4ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 83ms (Views: 68.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:16:03 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 83ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:16:05 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 77ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:16:34 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 79ms (Views: 71.6ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:16:35 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 66ms (Views: 62.1ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:16:40 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 70ms (Views: 65.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:16:43 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.3ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 83ms (Views: 67.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:16:44 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 65ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:16:45 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 70ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:17:40 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.2ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 88ms (Views: 72.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:17:41 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 67ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:17:42 +0200
+Processing by WelcomeController#login as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/welcome_controller.rb:8:in `login'
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:17:42 +0200
+Processing by WelcomeController#login as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:17:42 +0200
+app/controllers/welcome_controller.rb:8:in `login'
+Processing by WelcomeController#login as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/welcome_controller.rb:8:in `login'
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:18:02 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 76ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:18:14 +0200
+Processing by WelcomeController#login as HTML
+Redirected to 
+Completed 500 Internal Server Error in 1ms
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/welcome_controller.rb:8:in `login'
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:18:18 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 70ms (Views: 62.7ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:18:55 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 83ms (Views: 77.7ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:18:57 +0200
+Processing by WelcomeController#login as HTML
+Redirected to 
+Completed 500 Internal Server Error in 3ms
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/welcome_controller.rb:8:in `login'
+Started GET "/welcome/index" for 127.0.0.1 at 2017-10-26 17:19:38 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 76ms (Views: 70.2ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:19:39 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.3ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 78ms (Views: 63.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:19:41 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 62ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:19:41 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:19:48 +0200
+Processing by WelcomeController#login as HTML
+Completed 406 Not Acceptable in 166ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (WelcomeController#login is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:21:12 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 72ms (Views: 67.7ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:21:17 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.3ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 79ms (Views: 69.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:21:17 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 68ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:21:18 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:21:20 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (1.1ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 74ms (Views: 66.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:21:21 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 63ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:21:26 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 68ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:21:31 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:21:34 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:21:37 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 65ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:21:38 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.5ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 71ms (Views: 62.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:21:40 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:21:50 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 67ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:22:31 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:22:32 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 65ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:22:33 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 66ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:22:33 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 64ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:22:55 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 83ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:22:57 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.4ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 74ms (Views: 68.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:22:58 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 66ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:22:58 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 67ms (Views: 54.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:22:59 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 62ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:23:00 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.4ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 71ms (Views: 65.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:23:00 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 64ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:23:01 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 58ms (Views: 53.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quests/1" for 127.0.0.1 at 2017-10-26 17:23:03 +0200
+Processing by QuestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering quests/show.html.erb within layouts/application
+  Rendered quests/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 87ms (Views: 53.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:23:04 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 65ms (Views: 60.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:23:04 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 72ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:23:05 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 64ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:23:06 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 63ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:23:12 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 115ms (Views: 109.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:23:18 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:23:19 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:23:21 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 76ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:27:45 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.2ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (176.0ms)
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `admin' for #<#<Class:0x007f15245f1af0>:0x007f15245e7eb0>
+Did you mean?  admin?):
+    26: <p><%= link_to 'Back', root_path %></p>
+    27: 
+    28: 
+    29: <% if admin? %>
+    30: <h1>Admin Secret Message</h1>
+    31: <% end %>
+  
+app/helpers/application_helper.rb:3:in `admin?'
+app/views/quests/index.html.erb:29:in `_app_views_quests_index_html_erb__3923548377814477915_69864390627800'
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:28:10 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 84ms (Views: 78.2ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:28:12 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:28:14 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 65ms (Views: 60.1ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:28:15 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.7ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 77ms (Views: 63.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:28:17 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 64ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:28:18 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.4ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 71ms (Views: 58.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:28:19 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 65ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:28:19 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:28:22 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 74ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:28:22 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 78ms (Views: 69.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:28:25 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 66ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:28:26 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.5ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 71ms (Views: 61.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:28:27 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 73ms (Views: 64.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:28:38 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.4ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 87ms (Views: 72.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:28:39 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 121ms (Views: 98.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:28:40 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 92ms (Views: 71.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:28:41 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 67ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:28:41 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:31:52 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 73ms (Views: 68.8ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:31:53 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.2ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 75ms (Views: 61.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:31:55 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 66ms (Views: 61.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:31:57 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 69ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:32:27 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 62ms (Views: 55.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:32:38 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 63ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:32:39 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:32:47 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 68ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:32:49 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 67ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:32:53 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 69ms (Views: 62.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:34:07 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 59ms (Views: 54.3ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:34:08 +0200
+Processing by WelcomeController#login as HTML
+Completed 500 Internal Server Error in 57ms
+
+
+  
+NoMethodError (undefined method `admin?' for #<WelcomeController:0x007f15243752b8>):
+  
+app/controllers/application_controller.rb:6:in `authenticate'
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:34:30 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 70ms (Views: 65.3ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:34:31 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 81ms (Views: 68.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:34:32 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 70ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:34:33 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 60ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:34:34 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 62ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:34:39 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 87ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:34:40 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 95ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:34:47 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 68ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:34:48 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 65ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:36:09 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 74ms (Views: 63.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:36:11 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 67ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/npcs" for 127.0.0.1 at 2017-10-26 17:36:12 +0200
+Processing by NpcsController#index as HTML
+  Rendering npcs/index.html.erb within layouts/application
+  [1m[36mNpc Load (0.4ms)[0m  [1m[34mSELECT "npcs".* FROM "npcs"[0m
+  Rendered npcs/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 76ms (Views: 65.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:36:13 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 67ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:36:13 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 69ms (Views: 62.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:36:14 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 69ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:36:14 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:36:22 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 67ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:36:23 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:36:25 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 72ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:36:26 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 72ms (Views: 66.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:36:28 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 66ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:36:29 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:36:35 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:36:39 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:36:45 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 69ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:36:47 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 72ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:36:48 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 79ms (Views: 72.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:37:34 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 60ms (Views: 55.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:38:14 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 77ms (Views: 68.6ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:38:16 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.5ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 100ms (Views: 70.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:38:18 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 63ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:38:28 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.3ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 72ms (Views: 67.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:38:32 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 59ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:38:34 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:38:37 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 67ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:38:38 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:38:44 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 67ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:38:46 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 70ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:38:47 +0200
+Processing by WelcomeController#login as HTML
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 60ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:38:48 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 62ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:38:49 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 65ms (Views: 59.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:38:53 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 67ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:39:13 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 78ms (Views: 67.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:39:15 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 72ms (Views: 63.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:39:20 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 71ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:39:22 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:39:26 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 72ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/login" for 127.0.0.1 at 2017-10-26 17:39:27 +0200
+Processing by WelcomeController#login as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-26 17:39:29 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 66ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-10-26 17:42:26 +0200
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.4ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 69ms (Views: 59.3ms | ActiveRecord: 0.4ms)
+
+

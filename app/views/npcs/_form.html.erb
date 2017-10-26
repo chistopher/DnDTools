@@ -1,0 +1,31 @@
+<%= form_with(model: @npc, local: true) do |form| %>
+
+  <% if @npc.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@npc.errors.count, "error") %> prohibited
+        this NPC from being saved:
+      </h2>
+      <ul>
+        <% @npc.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= form.label :Name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :Description %><br>
+    <%= form.text_area :description %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+
+<% end %>

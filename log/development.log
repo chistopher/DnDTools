@@ -2349,3 +2349,167 @@ Migrating to CreateJoinTableQuestNpc (20171024152927)
             FROM sqlite_temp_master
             WHERE name='index_quests_npcs_on_quest_id' AND type='index'
 [0m
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:19:03 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 812ms (Views: 803.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quests" for 127.0.0.1 at 2017-11-01 12:19:09 +0100
+Processing by QuestsController#index as HTML
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.2ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 95ms (Views: 27.2ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/quests/4" for 127.0.0.1 at 2017-11-01 12:19:37 +0100
+Processing by QuestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8YCnMs1Y5XX/gP24bZNO2CHwlxYOIrv+X3Al5V48hxiImiWRZMyVEzEG045DpcDn0xR/wN3jc0T2VH+WFExnVA==", "id"=>"4"}
+  [1m[36mQuest Load (0.2ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'npcs_quests'):
+  
+app/controllers/quests_controller.rb:42:in `destroy'
+Started GET "/" for 127.0.0.1 at 2017-11-01 12:27:37 +0100
+Started GET "/quests" for 127.0.0.1 at 2017-11-01 12:27:37 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Processing by QuestsController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 198ms (Views: 189.0ms | ActiveRecord: 0.0ms)
+
+
+  Rendering quests/index.html.erb within layouts/application
+  [1m[36mQuest Load (0.2ms)[0m  [1m[34mSELECT "quests".* FROM "quests"[0m
+  Rendered quests/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 229ms (Views: 30.0ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/quests/4" for 127.0.0.1 at 2017-11-01 12:27:42 +0100
+Processing by QuestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TzcpvdgVvjUnCFyzk/sUoW9BESeFtQ5OdwmUGyBVo+s2LasecYHOU+mOcoW9zZqenaX58VZ0xvTeLc5oaiVDpw==", "id"=>"4"}
+  [1m[36mQuest Load (0.1ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'npcs_quests'):
+  
+app/controllers/quests_controller.rb:42:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_quests_npcs_on_npc_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_quests_npcs_on_npc_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_quests_npcs_on_quest_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_quests_npcs_on_quest_id' AND type='index'
+[0m
+Started DELETE "/quests/4" for 127.0.0.1 at 2017-11-01 12:28:31 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TzcpvdgVvjUnCFyzk/sUoW9BESeFtQ5OdwmUGyBVo+s2LasecYHOU+mOcoW9zZqenaX58VZ0xvTeLc5oaiVDpw==", "id"=>"4"}
+  [1m[36mQuest Load (0.2ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'npcs_quests'):
+  
+app/controllers/quests_controller.rb:42:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_quests_npcs_on_npc_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_quests_npcs_on_npc_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_quests_npcs_on_quest_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_quests_npcs_on_quest_id' AND type='index'
+[0m
+Started DELETE "/quests/4" for 127.0.0.1 at 2017-11-01 12:35:17 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TzcpvdgVvjUnCFyzk/sUoW9BESeFtQ5OdwmUGyBVo+s2LasecYHOU+mOcoW9zZqenaX58VZ0xvTeLc5oaiVDpw==", "id"=>"4"}
+  [1m[36mQuest Load (0.2ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'npcs_quests'):
+  
+app/controllers/quests_controller.rb:42:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_quests_npcs_on_npc_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_quests_npcs_on_npc_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_quests_npcs_on_quest_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_quests_npcs_on_quest_id' AND type='index'
+[0m
+Started DELETE "/quests/4" for 127.0.0.1 at 2017-11-01 12:39:28 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TzcpvdgVvjUnCFyzk/sUoW9BESeFtQ5OdwmUGyBVo+s2LasecYHOU+mOcoW9zZqenaX58VZ0xvTeLc5oaiVDpw==", "id"=>"4"}
+  [1m[36mQuest Load (0.1ms)[0m  [1m[34mSELECT  "quests".* FROM "quests" WHERE "quests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'npcs_quests'):
+  
+app/controllers/quests_controller.rb:42:in `destroy'

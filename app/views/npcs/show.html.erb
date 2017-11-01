@@ -1,0 +1,14 @@
+<h1><%= @npc.id %></h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @npc.name %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @npc.description %>
+</p>
+
+<%= link_to 'Edit', edit_npc_path(@npc) %>
+<%= link_to 'Back', npcs_path %>

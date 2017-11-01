@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
         session[:user] = 'admin' if user_name == 'admin' && password == 'password'
       end
     end
+
+    def admin?
+      session[:user] == 'admin'
+    end
 end

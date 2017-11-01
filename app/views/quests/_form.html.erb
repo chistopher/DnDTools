@@ -15,14 +15,30 @@
   <% end %>
 
   <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
   </p>
 
   <p>
     <%= form.label :Description %><br>
     <%= form.text_area :description %>
   </p>
+
+  <p>
+  <%= form.label :npc_id %><br />
+  <% if admin? %>
+    <%= form.collection_select :npc_id, Npc.order(:name), :id, :name, include_blank: true %>
+  <% else %>
+    <%= form.collection_select :npc_id, Npc.where(discovered: true).order(:name), :id, :name, include_blank: true %>
+  <% end %>
+  </p>
+
+  <% if admin? %>
+    <p>
+      <%= form.check_box :discovered %>
+      <%= form.label :Discovered %>
+    </p>
+  <% end %>
 
   <p>
     <%= form.submit %>

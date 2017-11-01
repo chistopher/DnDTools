@@ -24,6 +24,13 @@
     <%= form.text_area :description %>
   </p>
 
+  <% if admin? %>
+    <p>
+      <%= form.check_box :discovered %>
+      <%= form.label :Discovered %>
+    </p>
+  <% end %>
+
   <p>
     <%= form.submit %>
   </p>

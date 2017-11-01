@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171024152927) do
+ActiveRecord::Schema.define(version: 20171027100037) do
 
   create_table "npcs", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "discovered", default: true
   end
 
   create_table "npcs_quests", id: false, force: :cascade do |t|
@@ -27,10 +28,11 @@ ActiveRecord::Schema.define(version: 20171024152927) do
   end
 
   create_table "quests", force: :cascade do |t|
-    t.string "title"
+    t.string "name"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "discovered", default: true
   end
 
 end

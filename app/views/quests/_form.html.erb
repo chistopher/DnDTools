@@ -3,8 +3,7 @@
   <% if @quest.errors.any? %>
     <div id="error_explanation">
       <h2>
-        <%= pluralize(@quest.errors.count, "error") %> prohibited
-        this quest from being saved:
+        <%= pluralize(@quest.errors.count, "error") %> prohibited this quest from being saved:
       </h2>
       <ul>
         <% @quest.errors.full_messages.each do |msg| %>
@@ -14,33 +13,40 @@
     </div>
   <% end %>
 
-  <p>
-    <%= form.label :name %><br>
-    <%= form.text_field :name %>
-  </p>
+  <div class="field form-group">
+    <%= form.label :name, class: 'col-sm-2 control-label' %><br>
+    <div class="col-sm-10">
+      <%= form.text_field :name, class: 'form-control' %>
+    </div>
+  </div>
 
-  <p>
-    <%= form.label :Description %><br>
-    <%= form.text_area :description %>
-  </p>
+  <div class="field form-group">
+    <%= form.label :Description, class: 'col-sm-2 control-label' %><br>
+    <div class="col-sm-10">
+      <%= form.text_area :description, class: 'form-control' %>
+    </div>
+  </div>
 
-  <p>
-    <%= form.label :npcs %> <br>
+  <div class="field form-group">
+  <%= form.label :npcs, class: 'col-sm-2 control-label' %><br />
     <%= form.fields_for :npcs, include_id: false do |npc_form| %>
-      <%= npc_form.collection_select :id, permitted(Npc).order(:name), :id, :name, include_blank: true %>
-      <br>
+	  <div class="col-sm-10">
+        <%= npc_form.collection_select :id, permitted(Npc).order(:name), :id, :name, include_blank: true, class: 'col-sm-2 control-label'%>
+	  </div>
     <% end %>
-  </p>
+  </div>
 
   <% if admin? %>
-    <p>
+    <div class="field form-group">
       <%= form.check_box :discovered %>
       <%= form.label :Discovered %>
-    </p>
+    </div>
   <% end %>
 
-  <p>
-    <%= form.submit %>
-  </p>
+  <div class="actions form-group">
+   <div class="col-sm-offset-2 col-sm-10">
+     <%= form.submit %>
+   </div>
+ </div>
 
 <% end %>

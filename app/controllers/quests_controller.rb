@@ -6,6 +6,7 @@ class QuestsController < ApplicationController
 
   def show
     @quest = Quest.find(params[:id])
+    requireAuth(@quest)
   end
 
   def new
@@ -15,13 +16,13 @@ class QuestsController < ApplicationController
 
   def edit
     @quest = Quest.find(params[:id])
+    requireAuth(@quest)
+
     @quest.npcs.build
   end
 
   def create
     @quest = Quest.new(quest_params)
-    npc = Npc.find_by(id: params[:quest][:npc_id])
-    @quest.npcs << npc unless !npc
 
     if @quest.save
       redirect_to @quest
@@ -32,6 +33,7 @@ class QuestsController < ApplicationController
 
   def update
     @quest = Quest.find(params[:id])
+    requireAuth(@quest)
 
     if @quest.update(quest_params)
       redirect_to @quest
@@ -42,8 +44,9 @@ class QuestsController < ApplicationController
 
   def destroy
     @quest  = Quest.find(params[:id])
-    @quest.destroy
+    requireAuth(@quest)
 
+    @quest.destroy
     redirect_to quests_path
   end
 

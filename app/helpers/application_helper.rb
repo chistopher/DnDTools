@@ -5,9 +5,9 @@ module ApplicationHelper
 
   def permitted(model)
     if admin?
-      return model.unscoped
-    else
       return model
+    else
+      return model.discovered
     end
   end
 end

@@ -6,6 +6,7 @@ class NpcsController < ApplicationController
 
   def show
     @npc = Npc.find(params[:id])
+    requireAuth(@npc)
   end
 
   def new
@@ -14,6 +15,7 @@ class NpcsController < ApplicationController
 
   def edit
     @npc = Npc.find(params[:id])
+    requireAuth(@npc)
   end
 
   def create
@@ -28,6 +30,7 @@ class NpcsController < ApplicationController
 
   def update
     @Npc = Npc.find(params[:id])
+    requireAuth(@npc)
 
     if @Npc.update(npc_params)
       redirect_to @Npc
@@ -38,17 +41,14 @@ class NpcsController < ApplicationController
 
   def destroy
     @Npc  = Npc.find(params[:id])
-    @Npc.destroy
+    requireAuth(@npc)
 
+    @Npc.destroy
     redirect_to npcs_path
   end
 
   private
     def npc_params
-      if admin?
-        params.require(:npc).permit(:name, :description, :discovered)
-      else
-        params.require(:npc).permit(:name, :description)
-      end
+      params.require(:npc).permit(:name, :description, :discovered)
     end
 end

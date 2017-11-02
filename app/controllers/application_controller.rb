@@ -11,4 +11,10 @@ class ApplicationController < ActionController::Base
     def admin?
       session[:user] == 'admin'
     end
+
+    def requireAuth(item)
+      if not admin? and not item.discovered
+        authenticate
+      end
+    end
 end

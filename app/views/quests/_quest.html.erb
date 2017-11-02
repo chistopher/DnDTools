@@ -8,11 +8,11 @@
   <%= @quest.description %>
 </p>
 
-<% if not @quest.npcs.empty? %>
+<% if not permitted(@quest.npcs).empty? %>
   <p>
     <strong>Npcs:</strong>
-    <% @quest.npcs.each do |npc| %>
-      <br> <%= link_to npc.name, npc %> 
+    <% permitted(@quest.npcs).each do |npc| %>
+      <br> <%= link_to npc.name, npc %>
     <% end %>
   </p>
 <% end %>

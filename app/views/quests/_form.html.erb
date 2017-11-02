@@ -25,12 +25,11 @@
   </p>
 
   <p>
-  <%= form.label :npc_id %><br />
-  <% if admin? %>
-    <%= form.collection_select :npc_id, Npc.order(:name), :id, :name, include_blank: true %>
-  <% else %>
-    <%= form.collection_select :npc_id, Npc.where(discovered: true).order(:name), :id, :name, include_blank: true %>
-  <% end %>
+    <%= form.label :npcs %> <br>
+    <%= form.fields_for :npcs, include_id: false do |npc_form| %>
+      <%= npc_form.collection_select :id, permitted(Npc).order(:name), :id, :name, include_blank: true %>
+      <br>
+    <% end %>
   </p>
 
   <% if admin? %>

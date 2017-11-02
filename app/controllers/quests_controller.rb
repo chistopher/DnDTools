@@ -10,10 +10,12 @@ class QuestsController < ApplicationController
 
   def new
     @quest = Quest.new()
+    2.times { @quest.npcs.build }
   end
 
   def edit
     @quest = Quest.find(params[:id])
+    @quest.npcs.build
   end
 
   def create
@@ -30,8 +32,6 @@ class QuestsController < ApplicationController
 
   def update
     @quest = Quest.find(params[:id])
-    npc = Npc.find_by(id: params[:quest][:npc_id])
-    @quest.npcs << npc unless !npc
 
     if @quest.update(quest_params)
       redirect_to @quest
@@ -49,10 +49,6 @@ class QuestsController < ApplicationController
 
   private
     def quest_params
-      if admin?
-        params.require(:quest).permit(:name, :description, :discovered)
-      else
-        params.require(:quest).permit(:name, :description)
-      end
+      params.require(:quest).permit(:name, :description, :discovered, npcs_attributes: [:id])
     end
 end

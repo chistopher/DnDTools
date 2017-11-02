@@ -12,7 +12,7 @@
   <p>
     <strong>Npcs:</strong>
     <% @quest.npcs.each do |npc| %>
-      <br> <%= npc.name %> 
+      <br> <%= link_to npc.name, npc %> 
     <% end %>
   </p>
 <% end %>

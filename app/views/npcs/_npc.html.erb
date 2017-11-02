@@ -8,6 +8,15 @@
   <%= @npc.description %>
 </p>
 
+<% if not @npc.quests.empty? %>
+  <p>
+    <strong>Quests:</strong>
+    <% @npc.quests.each do |quest| %>
+      <br> <%= link_to quest.name, quest %>
+    <% end %>
+  </p>
+<% end %>
+
 <% if admin? %>
   <p>
     <strong>Discovered:</strong>

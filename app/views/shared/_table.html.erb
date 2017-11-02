@@ -1,24 +1,24 @@
 
-<table>
+<table class="table">
   <tr>
-    <th>Id</th>
+    <!--<th>Id</th>-->
     <th>Name</th>
   </tr>
 
   <% items.each do |item| %>
     <% if item.discovered or admin? %>
       <tr>
-        <td><%= item.id %></td>
+        <!--<td><%= item.id %></td>-->
         <td><%= item.name %></td>
-        <td><%= link_to 'Show', item %></td>
-        <td><%= link_to 'Edit', id: item.id, controller: controller, action: 'edit' %></td>
+        <td><%= link_to 'Show', item, class: 'btn btn-primary btn-xs' %></td>
+        <td><%= link_to 'Edit', id: item.id, action: 'edit', class: 'btn btn-info btn-xs' %></td>
         <td><%= link_to 'Destroy', item, action: 'destroy', method: :delete,
-                data: { confirm: 'Are you sure?' } %></td>
+                data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' %></td>
       </tr>
     <% end %>
   <% end %>
 </table>
 
-<%= link_to 'New Item', controller: controller, action: 'new' %>
+<%= link_to 'New Item', controller: controller, action: 'new', class: 'btn btn-success' %>
 
 <p><%= link_to 'Back', root_path %></p>

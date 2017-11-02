@@ -32,7 +32,6 @@ class NpcsController < ApplicationController
     if @Npc.update(npc_params)
       redirect_to @Npc
     else
-      puts @Npc.errors.any?
       render 'edit'
     end
   end
@@ -46,6 +45,10 @@ class NpcsController < ApplicationController
 
   private
     def npc_params
-      params.require(:npc).permit(:name, :description)
+      if admin?
+        params.require(:npc).permit(:name, :description, :discovered)
+      else
+        params.require(:npc).permit(:name, :description)
+      end
     end
 end

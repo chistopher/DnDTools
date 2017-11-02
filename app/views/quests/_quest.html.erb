@@ -1,0 +1,25 @@
+<p>
+  <strong>Name:</strong>
+  <%= @quest.name %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @quest.description %>
+</p>
+
+<% if not @quest.npcs.empty? %>
+  <p>
+    <strong>Npcs:</strong>
+    <% @quest.npcs.each do |npc| %>
+      <br> <%= npc.name %> 
+    <% end %>
+  </p>
+<% end %>
+
+<% if admin? %>
+  <p>
+    <strong>Discovered:</strong>
+    <%= @quest.discovered.to_s %>
+  </p>
+<% end %>

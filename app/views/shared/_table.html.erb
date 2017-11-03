@@ -9,14 +9,11 @@
       <tr>
         <!--<td><%= item.id %></td>-->
         <td><%= item.name %></td>
-        <td><%= link_to 'Show', item, class: 'btn btn-primary btn-xs' %></td>
-        <td><%= link_to 'Edit', id: item.id, action: 'edit', class: 'btn btn-info btn-xs' %></td>
-        <td><%= link_to 'Destroy', item, action: 'destroy', method: :delete,
-                data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' %></td>
+        <td><%= link_to 'Show', item, class: 'btn btn-primary' %></td>
+        <td><%= link_to 'Edit', {id: item.id, action: 'edit'}, class: 'btn btn-warning' %></td>
+        <td><%= link_to 'Destroy', item, {method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'} %></td>
       </tr>
   <% end %>
 </table>
 
-<%= link_to 'New Item', controller: controller, action: 'new', class: 'btn btn-success' %>
-
-<p><%= link_to 'Back', root_path %></p>
+<%= link_to 'New Item', {controller: controller, action: 'new'}, class: 'btn btn-success' %>

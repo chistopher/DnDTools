@@ -1,6 +1,5 @@
-<h1>Npc: <%= @npc.id %></h1>
 
 <%= render @npc %>
 
-<%= link_to 'Edit', edit_npc_path(@npc) %>
-<%= link_to 'Back', npcs_path %>
+<%= link_to 'Edit', edit_npc_path(@npc), class: 'btn btn-warning' %>
+<%= link_to 'Back', npcs_path, class: 'btn btn-default' %>

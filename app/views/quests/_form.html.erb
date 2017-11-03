@@ -30,23 +30,26 @@
   <% if admin? %>
 
     <div class="field form-group">
-      <%= form.label :npcs, class: 'col-sm-2 control-label' %><br />
+      <%= form.label :npcs, class: 'col-sm-2 control-label' %>
+      <div class="col-sm-10">
       <%= form.fields_for :npcs, include_id: false do |npc_form| %>
-  	  <div class="col-sm-10">
           <%= npc_form.collection_select :id, Npc.order(:name), :id, :name, include_blank: true, class: 'col-sm-2 control-label'%>
-  	  </div>
+          <br>
       <% end %>
+      </div>
     </div>
 
     <div class="field form-group">
-      <%= form.check_box :discovered %>
-      <%= form.label :Discovered %>
+      <%= form.label :Discovered, class: 'col-sm-2 control-label' %>
+      <div class="col-sm-10">
+        <%= form.check_box :discovered %>
+      </div>
     </div>
-    
+
   <% end %>
 
   <div class="actions form-group">
-   <div class="col-sm-offset-2 col-sm-10">
+   <div class="col-sm-2">
      <%= form.submit %>
    </div>
  </div>

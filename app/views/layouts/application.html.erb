@@ -9,18 +9,28 @@
   </head>
 
   <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <%= link_to "DnD Tools", root_path, class: "navbar-brand" %>
+        </div>
+
+        <ul class="nav navbar-nav">
+          <li> <%= link_to "Quests", quests_path %> </li>
+          <li> <%= link_to "NPCs", npcs_path %> </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li> <%= link_to 'Master Login', welcome_login_path %> </li>
+        </ul>
+
+      </div>
+    </nav>
+
     <div id="main-container" class="container">
-     <div class="row">
-       <div class="col-xs-3">
-         <h1>DnD Tools</h1>
-       </div>
-       <div class="col-xs-9">
-       </br>
-       </br>
-       </br>
-         <%= yield %>
-       </div>
-     </div>
-   </div>
+      <%= yield %>
+    </div>
   </body>
 </html>

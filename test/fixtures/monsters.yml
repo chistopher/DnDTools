@@ -1,0 +1,59 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  size: MyString
+  type: 
+  subtype: MyString
+  alignment: MyString
+  armor_class: 1
+  hit_points: 1
+  hit_dice: MyString
+  speed: MyString
+  strength: 1
+  dexterity: 1
+  constitution: 1
+  intelligence: 1
+  wisdom: 1
+  charisma: 1
+  constitution_save: 1
+  intelligence_save: 1
+  wisdom_save: 1
+  history: 1
+  perception: 1
+  damage_vulnerabilities: MyString
+  damage_resistences: MyString
+  damage_immunities: MyString
+  condition_immunities: MyString
+  senses: MyString
+  languages: MyString
+  challenge_rating: MyString
+
+two:
+  name: MyString
+  size: MyString
+  type:
+  subtype: MyString
+  alignment: MyString
+  armor_class: 1
+  hit_points: 1
+  hit_dice: MyString
+  speed: MyString
+  strength: 1
+  dexterity: 1
+  constitution: 1
+  intelligence: 1
+  wisdom: 1
+  charisma: 1
+  constitution_save: 1
+  intelligence_save: 1
+  wisdom_save: 1
+  history: 1
+  perception: 1
+  damage_vulnerabilities: MyString
+  damage_resistences: MyString
+  damage_immunities: MyString
+  condition_immunities: MyString
+  senses: MyString
+  languages: MyString
+  challenge_rating: MyString

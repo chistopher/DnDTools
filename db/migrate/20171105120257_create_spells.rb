@@ -12,7 +12,7 @@ class CreateSpells < ActiveRecord::Migration[5.1]
       t.string :casting_time
       t.string :level
       t.string :school
-      t.string :class
+      t.string :classes
 
       t.timestamps
     end

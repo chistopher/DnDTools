@@ -41,10 +41,10 @@ hiddenQuests[3].npcs << publicNpcs[2..3] << hiddenNpcs[2..3]
 
 spells = JSON.parse(File.read('./resources/5e-SRD-Spells.json'))
 spells.each do |spell|
-  Spell.create(spell.slice(:name, :desc, :page, :range, :components, :ritual, :duration, :concentration, :casting_time, :level, :school, :classes))
+  a= Spell.create(spell.slice("name", "desc", "page", "range", "components", "ritual", "duration", "concentration", "casting_time", "level", "school", "classes"))
 end
 
 monsters = JSON.parse(File.read('./resources/5e-SRD-Monsters.json'))
 monsters.each do |monster|
-  Monster.create(monster.slice(:name, :size, :type, :subtype, :alignment, :armor_class, :hit_points, :hit_dice, :speed, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :constitution_save, :intelligence_save, :wisdom_save, :history, :perception, :damage_vulnerabilities, :damage_resistances, :damage_immunities, :condition_immunities, :senses, :languages, :challenge_rating))
+  Monster.create(monster.slice("name", "size", "type", "subtype", "alignment", "armor_class", "hit_points", "hit_dice", "speed", "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "constitution_save", "intelligence_save", "wisdom_save", "history", "perception", "damage_vulnerabilities", "damage_resistances", "damage_immunities", "condition_immunities", "senses", "languages", "challenge_rating"))
 end

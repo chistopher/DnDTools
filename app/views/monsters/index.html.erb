@@ -1,0 +1,17 @@
+<h1>Monsters</h1>
+
+
+<table class="table">
+  <tr>
+    <!--<th>Id</th>-->
+    <th>Name</th>
+  </tr>
+
+  <% @monsters.each do |item| %>
+      <tr>
+        <!--<td><%= item.id %></td>-->
+        <td><%= item.name %></td>
+        <td><%= link_to 'Show', {id: item.id, action: "show"}, class: 'btn btn-primary' %></td>
+     </tr>
+  <% end %>
+</table>

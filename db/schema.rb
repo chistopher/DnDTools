@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20171105120257) do
   create_table "monsters", force: :cascade do |t|
     t.string "name"
     t.string "size"
-    t.string "type"
+    t.string "typus"
     t.string "subtype"
     t.string "alignment"
     t.integer "armor_class"

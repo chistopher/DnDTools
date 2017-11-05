@@ -1,7 +1,9 @@
 
 <h2><%= @spell.name %></h2>
 
-<p>
-  <strong>Description:</strong>
-  <%= @spell.desc %>
-</p>
+<% (@spell.attributes.reject {|k,v| k=="id" or k=="created_at" or k=="updated_at" or v==nil or v=="" } ).each do |key, value| %>
+  <p>
+    <strong><%= key %>:</strong>
+    <%= value %>
+  </p>
+<% end %>

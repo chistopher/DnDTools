@@ -1,0 +1,9 @@
+
+<h2><%= @monster.name %></h2>
+
+<% (@monster.attributes.reject {|k,v| k=="id" or k=="created_at" or k=="updated_at" or v==nil or v=="" } ).each do |key, value| %>
+  <p>
+    <strong><%= key %>:</strong>
+    <%= value %>
+  </p>
+<% end %>

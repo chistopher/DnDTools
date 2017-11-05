@@ -3,7 +3,7 @@
 one:
   name: MyString
   size: MyString
-  type: 
+  typus:
   subtype: MyString
   alignment: MyString
   armor_class: 1
@@ -32,7 +32,7 @@ one:
 two:
   name: MyString
   size: MyString
-  type:
+  typus:
   subtype: MyString
   alignment: MyString
   armor_class: 1

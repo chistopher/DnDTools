@@ -44,7 +44,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The aboleth makes three tentacle attacks.",
@@ -120,7 +120,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Club",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
@@ -170,7 +170,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -263,7 +263,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dracolich can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -356,7 +356,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -451,7 +451,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -533,7 +533,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -627,7 +627,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -727,7 +727,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -828,7 +828,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -921,7 +921,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -1022,7 +1022,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -1120,7 +1120,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -1207,7 +1207,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The elemental makes two slam attacks.",
@@ -1273,7 +1273,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -1358,7 +1358,7 @@
     "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 27",
     "languages": "Common, Draconic",
     "challenge_rating": "23",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -1453,7 +1453,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -1557,7 +1557,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -1656,7 +1656,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -1761,7 +1761,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -1867,7 +1867,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -1960,7 +1960,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -2055,7 +2055,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -2158,7 +2158,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
@@ -2245,7 +2245,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The sphinx makes two claw attacks.",
@@ -2317,7 +2317,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The armor makes two melee attacks.",
@@ -2355,7 +2355,7 @@
     "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 11",
     "languages": "",
     "challenge_rating": "2",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage plus 3 (1d6) acid damage. If the target is a Large or smaller creature, it is grappled (escape DC 13). Until this grapple ends, the ankheg can bite only the grappled creature and has advantage on attack rolls to do so.",
@@ -2396,7 +2396,7 @@
     "senses": "passive Perception 13",
     "languages": "",
     "challenge_rating": "1/2",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The ape makes two fist attacks.",
@@ -2457,7 +2457,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Dagger",
         "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
@@ -2514,7 +2514,7 @@
         "damage_dice": "4d6"
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The assassin makes two shortsword attacks.",
@@ -2566,7 +2566,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Rake",
         "desc": "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 — 1) slashing damage.",
@@ -2606,7 +2606,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Slam",
         "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage.",
@@ -2639,7 +2639,7 @@
     "senses": "passive Perception 10",
     "languages": "",
     "challenge_rating": "1/4",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Beak",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.",
@@ -2691,7 +2691,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Warhammer",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage, or 8 (1d10 + 3) bludgeoning damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage.",
@@ -2731,7 +2731,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 — 1) piercing damage.",
@@ -2771,7 +2771,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
@@ -2831,7 +2831,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The balor makes two attacks: one with its longsword and one with its whip.",
@@ -2886,7 +2886,7 @@
     "senses": "passive Perception 10",
     "languages": "any one language (usually Common)",
     "challenge_rating": "1/8",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Scimitar",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.",
@@ -2931,7 +2931,7 @@
     "senses": "passive Perception 10",
     "languages": "any two languages",
     "challenge_rating": "2",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers.",
@@ -3008,7 +3008,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The devil makes three melee attacks: one with its tail and two with its claws. Alternatively, it can use Hurl Flame twice.",
@@ -3066,7 +3066,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 7 (2d6) poison damage.",
@@ -3111,7 +3111,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one creature. Hit: 1 piercing damage.",
@@ -3163,7 +3163,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The devil makes two attacks: one with its beard and one with its glaive.",
@@ -3210,7 +3210,7 @@
     "senses": "darkvision 90 ft., passive Perception 16",
     "languages": "Draconic",
     "challenge_rating": "11",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The behir makes two attacks: one with its bite and one to constrict.",
@@ -3274,7 +3274,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Greataxe",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage.",
@@ -3314,7 +3314,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The bear makes two attacks: one with its bite and one with its claws.",
@@ -3372,7 +3372,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) acid damage.",
@@ -3429,7 +3429,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Pseudopod",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 18 (4d8) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.",
@@ -3478,7 +3478,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.",
@@ -3529,7 +3529,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Beak",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
@@ -3568,7 +3568,7 @@
     "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 14",
     "languages": "Draconic",
     "challenge_rating": "3",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) lightning damage.",
@@ -3620,7 +3620,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Tusk",
         "desc": "Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.",
@@ -3670,7 +3670,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The devil makes three attacks: two with its claws and one with its sting.",
@@ -3740,7 +3740,7 @@
     "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 14",
     "languages": "Draconic",
     "challenge_rating": "1",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage.",
@@ -3792,7 +3792,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage.",
@@ -3839,7 +3839,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The bear makes two attacks: one with its bite and one with its claws.",
@@ -3899,7 +3899,7 @@
         "damage_dice": "2d6"
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Morningstar",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage.",
@@ -3947,7 +3947,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 30 (4d12 + 4) piercing damage.",
@@ -3985,7 +3985,7 @@
     "senses": "passive Perception 9",
     "languages": "",
     "challenge_rating": "1/8",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
@@ -4030,7 +4030,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The carrion crawler makes two attacks: one with its tentacles and one with its bite.",
@@ -4084,7 +4084,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Claws",
         "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
@@ -4124,7 +4124,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The bear makes two attacks: one with its bite and one with its claws.",
@@ -4180,7 +4180,7 @@
         "damage_dice": "3d6"
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The centaur makes two attacks: one with its pike and one with its hooves or two with its longbow.",
@@ -4244,7 +4244,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The devil makes two attacks with its chains.",
@@ -4295,7 +4295,7 @@
     "senses": "darkvision 60 ft., passive Perception 18",
     "languages": "understands Draconic but can't speak",
     "challenge_rating": "6",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The chimera makes three attacks: one with its bite, one with its horns, and one with its claws. When its fire breath is available, it can use the breath in place of its bite or horns.",
@@ -4366,7 +4366,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The chuul makes two pincer attacks. If the chuul is grappling a creature, the chuul can also use its tentacles once.",
@@ -4436,7 +4436,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The golem makes two slam attacks.",
@@ -4497,7 +4497,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The cloaker makes two attacks: one with its bite and one with its tail.",
@@ -4569,7 +4569,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The giant makes two morningstar attacks.",
@@ -4614,7 +4614,7 @@
     "senses": "darkvision 60 ft., passive Perception 11",
     "languages": "",
     "challenge_rating": "1/2",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC 11 Constitution saving throw against being magically petrified. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 24 hours.",
@@ -4647,7 +4647,7 @@
     "senses": "passive Perception 10",
     "languages": "any one language (usually Common)",
     "challenge_rating": "0",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Club",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
@@ -4679,7 +4679,7 @@
     "senses": "blindsight 10 ft., passive Perception 10",
     "languages": "",
     "challenge_rating": "1/4",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage.",
@@ -4725,7 +4725,7 @@
     "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 14",
     "languages": "Draconic",
     "challenge_rating": "1",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage.",
@@ -4784,7 +4784,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 8 (1d6 + 5) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 24 hours. Until this poison ends, the target is unconscious. Another creature can use an action to shake the target awake.",
@@ -4837,7 +4837,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage.",
@@ -4877,7 +4877,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target",
@@ -4925,7 +4925,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The fanatic makes two melee attacks.",
@@ -4972,7 +4972,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Scimitar",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) slashing damage.",
@@ -5018,7 +5018,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Crush",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) bludgeoning damage, and the darkmantle attaches to the target. If the target is Medium or smaller and the darkmantle has advantage on the attack roll, it attaches by engulfing the target's head, and the target is also blinded and unable to breathe while the darkmantle is attached in this way.\nWhile attached to the target, the darkmantle can attack no other creature except the target but has advantage on its attack rolls. The darkmantle's speed also becomes 0, it can't benefit from any bonus to its speed, and it moves with the target.\nA creature can detach the darkmantle by making a successful DC 13 Strength check as an action. On its turn, the darkmantle can detach itself from the target by using 5 feet of movement.",
@@ -5065,7 +5065,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dog makes two bite attacks.",
@@ -5123,7 +5123,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "War Pick",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
@@ -5163,7 +5163,7 @@
     "senses": "passive Perception 12",
     "languages": "",
     "challenge_rating": "0",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.",
@@ -5216,7 +5216,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The deva makes two melee attacks.",
@@ -5278,7 +5278,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
@@ -5331,7 +5331,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The djinni makes three scimitar attacks.",
@@ -5394,7 +5394,7 @@
         "damage_dice": "3d6"
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The doppelganger makes two melee attacks.",
@@ -5437,7 +5437,7 @@
     "senses": "passive Perception 10",
     "languages": "",
     "challenge_rating": "1/4",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage.",
@@ -5480,7 +5480,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon turtle makes three attacks: one with its bite and two with its claws. It can make one tail attack in place of its two claw attacks.",
@@ -5538,7 +5538,7 @@
     "senses": "darkvision 60 ft., passive Perception 9",
     "languages": "Abyssal, telepathy 60 ft. (works only with creatures that understand Abyssal)",
     "challenge_rating": "1/4",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dretch makes two attacks: one with its bite and one with its claws.",
@@ -5615,7 +5615,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack.",
@@ -5686,7 +5686,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Shortsword",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
@@ -5736,7 +5736,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Quarterstaff",
         "desc": "Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.",
@@ -5792,7 +5792,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Club",
         "desc": "Melee Weapon Attack: +2 to hit (+6 to hit with shillelagh), reach 5 ft., one target. Hit: 2 (1 d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage with shillelagh.",
@@ -5841,7 +5841,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Enlarge (Recharges after a Short or Long Rest)",
         "desc": "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available.",
@@ -5905,7 +5905,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Claws",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) slashing damage.",
@@ -5956,7 +5956,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Talons",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.",
@@ -6001,7 +6001,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The elemental makes two slam attacks.",
@@ -6059,7 +6059,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The efreeti makes two scimitar attacks or uses its Hurl Flame twice.",
@@ -6110,7 +6110,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Gore",
         "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) piercing damage.",
@@ -6158,7 +6158,7 @@
         "damage_dice": "2d6"
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Ram",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
@@ -6210,7 +6210,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The erinyes makes three attacks",
@@ -6287,7 +6287,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The ettercap makes two attacks: one with its bite and one with its claws.",
@@ -6357,7 +6357,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The ettin makes two attacks: one with its battleaxe and one with its morningstar.",
@@ -6420,7 +6420,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The elemental makes two touch attacks.",
@@ -6463,7 +6463,7 @@
     "senses": "passive Perception 16",
     "languages": "Giant",
     "challenge_rating": "9",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The giant makes two greatsword attacks.",
@@ -6540,7 +6540,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The golem makes two slam attacks.",
@@ -6585,7 +6585,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1 piercing damage plus 7 (3d4) poison damage.",
@@ -6630,7 +6630,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Longsword",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage.",
@@ -6706,7 +6706,7 @@
     "senses": "passive Perception 13",
     "languages": "Giant",
     "challenge_rating": "8",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The giant makes two greataxe attacks.",
@@ -6758,7 +6758,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The gargoyle makes two attacks: one with its bite and one with its claws.",
@@ -6815,7 +6815,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Pseudopod",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 10 (3d6) acid damage.",
@@ -6864,7 +6864,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 12 (2d8 + 3) piercing damage.",
@@ -6916,7 +6916,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Withering Touch",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 17 (4d6 + 3) necrotic damage.",
@@ -6964,7 +6964,7 @@
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "Common",
     "challenge_rating": "1",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) piercing damage.",
@@ -7004,7 +7004,7 @@
     "senses": "passive Perception 14",
     "languages": "",
     "challenge_rating": "7",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The ape makes two fist attacks.",
@@ -7056,7 +7056,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The badger makes two attacks: one with its bite and one with its claws.",
@@ -7113,7 +7113,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage.",
@@ -7159,7 +7159,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Tusk",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
@@ -7192,7 +7192,7 @@
     "senses": "blindsight 30 ft., passive Perception 8",
     "languages": "",
     "challenge_rating": "1/4",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
@@ -7226,7 +7226,7 @@
     "senses": "blindsight 10 ft., passive Perception 12",
     "languages": "",
     "challenge_rating": "2",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one creature. Hit: 11 (2d6 + 4) piercing damage.",
@@ -7274,7 +7274,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage, and the target is grappled (escape DC 11). The crab has two claws, each of which can grapple only one target.",
@@ -7315,7 +7315,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The crocodile makes two attacks: one with its bite and one with its tail.",
@@ -7368,7 +7368,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The eagle makes two attacks: one with its beak and one with its talons.",
@@ -7422,7 +7422,7 @@
         "damage_dice": "2d6"
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Ram",
         "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
@@ -7469,7 +7469,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 — 1) slashing damage.",
@@ -7516,7 +7516,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage, and the target is grappled (escape DC 11). Until this grapple ends, the target is restrained, and the frog can't bite another target.",
@@ -7567,7 +7567,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Ram",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.",
@@ -7608,7 +7608,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage.",
@@ -7653,7 +7653,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
@@ -7705,7 +7705,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Tentacles",
         "desc": "Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the octopus can't use its tentacles on another target.",
@@ -7757,7 +7757,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Talons",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) slashing damage.",
@@ -7791,7 +7791,7 @@
     "senses": "blindsight 10 ft., passive Perception 12",
     "languages": "",
     "challenge_rating": "1/4",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d4 + 4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
@@ -7836,7 +7836,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
@@ -7869,7 +7869,7 @@
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "",
     "challenge_rating": "1/8",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 10 Constitution saving throw or contract a disease. Until the disease is cured, the target can't regain hit points except by magical means, and the target's hit point maximum decreases by 3 (1d6) every 24 hours. If the target's hit point maximum drops to 0 as a result of this disease, the target dies.",
@@ -7902,7 +7902,7 @@
     "senses": "blindsight 60 ft., passive Perception 9",
     "languages": "",
     "challenge_rating": "3",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Claw",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 12). The scorpion has two claws, each of which can grapple only one target.",
@@ -7960,7 +7960,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Ram",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.",
@@ -8006,7 +8006,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 22 (3d10 + 6) piercing damage.",
@@ -8057,7 +8057,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
@@ -8107,7 +8107,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 5 (1d10) poison damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the toad can't bite another target.",
@@ -8158,7 +8158,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The vulture makes two attacks: one with its beak and one with its talons.",
@@ -8203,7 +8203,7 @@
     "senses": "passive Perception 10",
     "languages": "",
     "challenge_rating": "1/2",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Sting",
         "desc": "Sting. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
@@ -8245,7 +8245,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
@@ -8297,7 +8297,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
@@ -8342,7 +8342,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The gibbering mouther makes one bite attack and, if it can, uses its Blinding Spittle.",
@@ -8400,7 +8400,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The glabrezu makes four attacks: two with its pincers and two with its fists. Alternatively, it makes two attacks with its pincers and casts one spell.",
@@ -8467,7 +8467,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The gladiator makes three melee attacks or two ranged attacks.",
@@ -8526,7 +8526,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage.",
@@ -8586,7 +8586,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Ram",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.",
@@ -8627,7 +8627,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Scimitar",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.",
@@ -8680,7 +8680,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage.",
@@ -8727,7 +8727,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Gore",
         "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 18 (2d12 + 5) piercing damage.",
@@ -8790,7 +8790,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Pseudopod",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage plus 7 (2d6) acid damage, and if the target is wearing nonmagical metal armor, its armor is partly corroded and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.",
@@ -8836,7 +8836,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 3 (1d6) poison damage.",
@@ -8911,7 +8911,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Claws",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.",
@@ -8961,7 +8961,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target.",
@@ -9014,7 +9014,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The griffon makes two attacks: one with its beak and one with its claws.",
@@ -9079,7 +9079,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Spiked Bone Club",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 2 (1d4) piercing damage.",
@@ -9113,7 +9113,7 @@
     "senses": "passive Perception 12",
     "languages": "any one language (usually Common)",
     "challenge_rating": "1/8",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Spear",
         "desc": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.",
@@ -9163,7 +9163,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 8 (1d8 + 4) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.",
@@ -9223,7 +9223,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The sphinx makes two claw attacks.",
@@ -9278,7 +9278,7 @@
     "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 12",
     "languages": "Common, Draconic",
     "challenge_rating": "5",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.",
@@ -9336,7 +9336,7 @@
     "senses": "passive Perception 10",
     "languages": "Common",
     "challenge_rating": "1",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The harpy makes two attacks: one with its claws and one with its club.",
@@ -9394,7 +9394,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Talons",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
@@ -9439,7 +9439,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) fire damage.",
@@ -9493,7 +9493,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The hezrou makes three attacks: one with its bite and two with its claws.",
@@ -9544,7 +9544,7 @@
     "senses": "passive Perception 12",
     "languages": "Giant",
     "challenge_rating": "5",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The giant makes two greatclub attacks.",
@@ -9597,7 +9597,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The hippogriff makes two attacks: one with its beak and one with its claws.",
@@ -9650,7 +9650,7 @@
         "damage_dice": "2d6"
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Longsword",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage, or 6 (1d10 + 1) slashing damage if used with two hands.",
@@ -9697,7 +9697,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.",
@@ -9745,7 +9745,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The devil makes three melee attacks: two with its fork and one with its tail. It can use Hurl Flame in place of any melee attack.",
@@ -9809,7 +9809,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.",
@@ -9865,7 +9865,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The hydra makes as many bite attacks as it has heads.",
@@ -9911,7 +9911,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) piercing damage.",
@@ -9959,7 +9959,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The devil makes three attacks: one with its bite, one with its claws, and one with its tail.",
@@ -10036,7 +10036,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Claws",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) slashing damage plus 2 (1d4) cold damage.",
@@ -10105,7 +10105,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Sting (Bite in Beast Form)",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft ., one target. Hit: 5 (1d4 + 3) piercing damage, and the target must make on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
@@ -10157,7 +10157,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The stalker makes two slam attacks.",
@@ -10217,7 +10217,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The golem makes two melee attacks.",
@@ -10281,7 +10281,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 — 1) piercing damage.",
@@ -10332,7 +10332,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 21 (5d6 + 4) piercing damage.",
@@ -10372,7 +10372,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The knight makes two melee attacks.",
@@ -10440,7 +10440,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Dagger",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
@@ -10502,7 +10502,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The kraken makes three tentacle attacks, each of which it can replace with one use of Fling.",
@@ -10585,7 +10585,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The lamia makes two attacks: one with its claws and one with its dagger or Intoxicating Touch.",
@@ -10647,7 +10647,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Fist",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage",
@@ -10708,7 +10708,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Paralyzing Touch",
         "desc": "Melee Spell Attack: +12 to hit, reach 5 ft., one creature. Hit: 10 (3d6) cold damage. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
@@ -10787,7 +10787,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
@@ -10827,7 +10827,7 @@
     "senses": "darkvision 30 ft., passive Perception 9",
     "languages": "",
     "challenge_rating": "0",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
@@ -10869,7 +10869,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The lizardfolk makes two melee attacks, each one with a different weapon.",
@@ -10939,7 +10939,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Dagger",
         "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
@@ -10991,7 +10991,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Claws",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft ., one creature. Hit: 3 (1d4 + 1) slashing damage plus 2 (1d4) fire damage.",
@@ -11047,7 +11047,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Touch",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d6) fire damage. If the target is a creature or a flammable object, it ignites. Until a target takes an action to douse the fire, the target takes 3 (1d6) fire damage at the end of each of its turns.",
@@ -11086,7 +11086,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Gore",
         "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 25 (4d8 + 7) piercing damage.",
@@ -11133,7 +11133,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes.",
@@ -11206,7 +11206,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The marilith can make seven attacks: six with its longswords and one with its tail.",
@@ -11276,7 +11276,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
@@ -11320,7 +11320,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The medusa makes either three melee attacks —  one with its snake hair and two with its shortsword — or two ranged attacks with its longbow.",
@@ -11379,7 +11379,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Spear",
         "desc": "Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d6) piercing damage, or 4 (1d8) piercing damage if used with two hands to make a melee attack.",
@@ -11418,7 +11418,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The merrow makes two attacks: one with its bite and one with its claws or harpoon.",
@@ -11493,7 +11493,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Pseudopod",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait.",
@@ -11552,7 +11552,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Greataxe",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) slashing damage.",
@@ -11600,7 +11600,7 @@
         "damage_dice": "2d8"
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Greataxe",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) slashing damage.",
@@ -11652,7 +11652,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.",
@@ -11686,7 +11686,7 @@
     "senses": "darkvision 60 ft., passive Perception 10",
     "languages": "the languages it knew in life",
     "challenge_rating": "3",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The mummy can use its Dreadful Glare and makes one attack with its rotting fist.",
@@ -11752,7 +11752,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The mummy can use its Dreadful Glare and makes one attack with its rotting fist.",
@@ -11833,7 +11833,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The nalfeshnee uses Horror Nimbus if it can.  It then makes three attacks: one with its bite and two with its claws.",
@@ -11929,7 +11929,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Claws (Hag Form Only)",
         "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.",
@@ -11989,7 +11989,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage plus 7 (2d6) fire damage.",
@@ -12030,7 +12030,7 @@
     "senses": "passive Perception 12",
     "languages": "any two languages",
     "challenge_rating": "1/8",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Rapier",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
@@ -12082,7 +12082,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Pseudopod",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage plus 3 (1d6) acid damage.",
@@ -12141,7 +12141,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Tentacles",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage, and the target is grappled (escape DC 10). Until this grapple ends, the octopus can't use its tentacles on another target.",
@@ -12178,7 +12178,7 @@
     "senses": "darkvision 60 ft., passive Perception 8",
     "languages": "Common, Giant",
     "challenge_rating": "2",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Greatclub",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
@@ -12226,7 +12226,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Morningstar",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
@@ -12283,7 +12283,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The oni makes two attacks, either with its claws or its glaive.",
@@ -12341,7 +12341,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Greataxe",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage.",
@@ -12389,7 +12389,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The otyugh makes three attacks: one with its bite and two with its tentacles.",
@@ -12453,7 +12453,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Talons",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
@@ -12493,7 +12493,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The owlbear makes two attacks: one with its beak and one with its claws.",
@@ -12552,7 +12552,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
@@ -12596,7 +12596,7 @@
     "senses": "passive Perception 16",
     "languages": "understands Celestial, Common, Elvish, and Sylvan but can't speak",
     "challenge_rating": "2",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
@@ -12647,7 +12647,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
@@ -12705,7 +12705,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The pit fiend makes four attacks: one with its bite, one with its claw, one with its mace, and one with its tail.",
@@ -12790,7 +12790,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The planetar makes two melee attacks.",
@@ -12842,7 +12842,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) piercing damage.",
@@ -12875,7 +12875,7 @@
     "senses": "blindsight 10 ft., passive Perception 10",
     "languages": "",
     "challenge_rating": "1/8",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.",
@@ -12915,7 +12915,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The bear makes two attacks: one with its bite and one with its claws.",
@@ -12960,7 +12960,7 @@
     "senses": "passive Perception 10",
     "languages": "",
     "challenge_rating": "1/8",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) bludgeoning damage.",
@@ -13009,7 +13009,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Mace",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.",
@@ -13065,7 +13065,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
@@ -13114,7 +13114,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The worm makes two attacks: one with its bite and one with its stinger.",
@@ -13177,7 +13177,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Claw (Bite in Beast Form)",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft ., one target. Hit: 5 (1d4 + 3) piercing damage, and the target must succeed on a DC 10 Constitution saving throw or take 5 (2d4) poison damage and become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
@@ -13232,7 +13232,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
@@ -13278,7 +13278,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The rakshasa makes two claw attacks",
@@ -13323,7 +13323,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
@@ -13363,7 +13363,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Beak",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
@@ -13400,7 +13400,7 @@
     "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 14",
     "languages": "Draconic",
     "challenge_rating": "4",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 3 (1d6) fire damage.",
@@ -13452,7 +13452,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
@@ -13493,7 +13493,7 @@
         "damage_dice": "3d6"
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 40 (6d10 + 7) piercing damage plus 10 (3d6) fire damage. If the target is a creature, it is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the remorhaz can't bite another target.",
@@ -13539,7 +13539,7 @@
         "damage_dice": "2d8"
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Gore",
         "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.",
@@ -13572,7 +13572,7 @@
     "senses": "passive Perception 10",
     "languages": "",
     "challenge_rating": "1/4",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.",
@@ -13617,7 +13617,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The roc makes two attacks: one with its beak and one with its talons.",
@@ -13681,7 +13681,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The roper makes four attacks with its tendrils, uses Reel, and makes one attack with its bite.",
@@ -13746,7 +13746,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Smother",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one Medium or smaller creature. Hit: The creature is grappled (escape DC 13). Until this grapple ends, the target is restrained, blinded, and at risk of suffocating, and the rug can't smother another target. In addition, at the start of each of the target's turns, the target takes 10 (2d6 + 3) bludgeoning damage.",
@@ -13791,7 +13791,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
@@ -13843,7 +13843,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) piercing damage.",
@@ -13901,7 +13901,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The sahuagin makes two melee attacks: one with its bite and one with its claws or spear.",
@@ -13966,7 +13966,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The salamander makes two attacks: one with its spear and one with its tail.",
@@ -14021,7 +14021,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Ram",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) bludgeoning damage.",
@@ -14073,7 +14073,7 @@
     "senses": "blindsight 10 ft., passive Perception 9",
     "languages": "",
     "challenge_rating": "0",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Sting",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one.",
@@ -14116,7 +14116,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The scout makes two melee attacks or two ranged attacks.",
@@ -14188,7 +14188,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Claws",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
@@ -14280,7 +14280,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Strength Drain",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) necrotic damage, and the target's Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.\nIf a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later.",
@@ -14321,7 +14321,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The shambling mound makes two slam attacks. If both attacks hit a Medium or smaller target, the target is grappled (escape DC 14), and the shambling mound uses its Engulf on it.",
@@ -14381,7 +14381,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The guardian makes two fist attacks.",
@@ -14433,7 +14433,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Shriek",
         "desc": "When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker's turns afterward",
@@ -14470,7 +14470,7 @@
     "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 14",
     "languages": "Draconic",
     "challenge_rating": "2",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage.",
@@ -14509,7 +14509,7 @@
     "senses": "darkvision 60 ft., passive Perception 9",
     "languages": "understands all languages it spoke in life but can't speak",
     "challenge_rating": "1/4",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Shortsword",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
@@ -14575,7 +14575,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The solar makes two greatsword attacks.",
@@ -14659,7 +14659,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Life Drain",
         "desc": "Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
@@ -14709,7 +14709,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must succeed on a DC 9 Constitution saving throw or take 2 (1d4) poison damage.",
@@ -14757,7 +14757,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one creature. Hit: 7 (1d6 + 4) piercing damage, and the target must make a DC 13 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one.",
@@ -14792,7 +14792,7 @@
     "senses": "passive Perception 13",
     "languages": "Common, Elvish, Sylvan",
     "challenge_rating": "1/4",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Longsword",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
@@ -14859,7 +14859,7 @@
         "damage_dice": "2d6"
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The spy makes two melee attacks.",
@@ -14917,7 +14917,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Claws",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 2 (1d4) slashing damage plus 2 (1d4) fire damage.",
@@ -14959,7 +14959,7 @@
     "senses": "darkvision 60 ft., passive Perception 9",
     "languages": "",
     "challenge_rating": "1/8",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Blood Drain",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss.\nThe stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.",
@@ -15004,7 +15004,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The giant makes two greatclub attacks.",
@@ -15073,7 +15073,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The golem makes two slam attacks.",
@@ -15136,7 +15136,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The giant makes two greatsword attacks.",
@@ -15204,7 +15204,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Claw (Fiend Form Only)",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
@@ -15271,7 +15271,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bites",
         "desc": "Melee Weapon Attack: +4 to hit, reach 0 ft., one creature in the swarm's space. Hit: 5 (2d4) piercing damage, or 2 (1d4) piercing damage if the swarm has half of its hit points or fewer.",
@@ -15310,7 +15310,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bites",
         "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
@@ -15349,7 +15349,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bites",
         "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.\nA creature reduced to 0 hit points by a swarm of centipedes is stable but poisoned for 1 hour, even after regaining hit points, and paralyzed while poisoned in this way.",
@@ -15388,7 +15388,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bites",
         "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
@@ -15427,7 +15427,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bites",
         "desc": "Melee Weapon Attack: +6 to hit, reach 0 ft., one creature in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer. The target must make a DC 10 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one.",
@@ -15476,7 +15476,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bites",
         "desc": "Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer.",
@@ -15520,7 +15520,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bites",
         "desc": "Melee Weapon Attack: +2 to hit, reach 0 ft., one target in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.",
@@ -15559,7 +15559,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Beaks",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.",
@@ -15613,7 +15613,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bites",
         "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
@@ -15652,7 +15652,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bites",
         "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
@@ -15709,7 +15709,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The tarrasque can use its Frightful Presence. It then makes five attacks: one with its bite, two with its claws, one with its horns, and one with its tai l. It can use its Swallow instead of its bite.",
@@ -15803,7 +15803,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The thug makes two melee attacks.",
@@ -15861,7 +15861,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage.",
@@ -15911,7 +15911,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The treant makes two slam attacks.",
@@ -15968,7 +15968,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Spear",
         "desc": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.",
@@ -16008,7 +16008,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Gore",
         "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 24 (4d8 + 6) piercing damage.",
@@ -16066,7 +16066,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The troll makes three attacks: one with its bite and two with its claws.",
@@ -16112,7 +16112,7 @@
     "senses": "passive Perception 14",
     "languages": "",
     "challenge_rating": "8",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The tyrannosaurus makes two attacks: one with its bite and one with its tail. It can't make both attacks against the same target.",
@@ -16180,7 +16180,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The unicorn makes two attacks: one with its hooves and one with its horn.",
@@ -16289,7 +16289,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack (Vampire Form Only)",
         "desc": "The vampire makes two attacks, only one of which can be a bite attack.",
@@ -16382,7 +16382,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The vampire makes two attacks, only one of which can be a bite attack.",
@@ -16427,7 +16427,7 @@
     "senses": "passive Perception 12",
     "languages": "any one language (usually Common)",
     "challenge_rating": "3",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.",
@@ -16486,7 +16486,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The fungus makes 1d4 Rotting Touch attacks.",
@@ -16533,7 +16533,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The vrock makes two attacks: one with its beak and one with its talons.",
@@ -16606,7 +16606,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Beak",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.",
@@ -16645,7 +16645,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
@@ -16678,7 +16678,7 @@
     "senses": "darkvision 60 ft., passive Perception 9",
     "languages": "",
     "challenge_rating": "1/2",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
@@ -16723,7 +16723,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The elemental makes two slam attacks.",
@@ -16775,7 +16775,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 1 piercing damage.",
@@ -16820,7 +16820,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "In bear form, the werebear makes two claw attacks. In humanoid form, it makes two greataxe attacks. In hybrid form, it can attack like a bear or a humanoid.",
@@ -16891,7 +16891,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack (Humanoid or Hybrid Form Only)",
         "desc": "The wereboar makes two attacks, only one of which can be with its tusks.",
@@ -16950,7 +16950,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack (Humanoid or Hybrid Form Only)",
         "desc": "The wererat makes two attacks, only one of which can be a bite.",
@@ -17021,7 +17021,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack (Humanoid or Hybrid Form Only)",
         "desc": "In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks.",
@@ -17093,7 +17093,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack (Humanoid or Hybrid Form Only)",
         "desc": "The werewolf makes two attacks: one with its bite and one with its claws or spear.",
@@ -17151,7 +17151,7 @@
     "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 14",
     "languages": "Draconic",
     "challenge_rating": "2",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) cold damage.",
@@ -17199,7 +17199,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The wight makes two longsword attacks or two longbow attacks. It can use its Life Drain in place of one longsword attack.",
@@ -17273,7 +17273,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Shock",
         "desc": "Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d8) lightning damage.",
@@ -17329,7 +17329,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.",
@@ -17382,7 +17382,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
@@ -17423,7 +17423,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
@@ -17468,7 +17468,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Life Drain",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 21 (4d8 + 3) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
@@ -17507,7 +17507,7 @@
     "senses": "darkvision 60 ft., passive Perception 14",
     "languages": "",
     "challenge_rating": "6",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The wyvern makes two attacks: one with its bite and one with its stinger. While flying, it can use its claws in place of one other attack.",
@@ -17578,7 +17578,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The xorn makes three claw attacks and one bite attack.",
@@ -17636,7 +17636,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
@@ -17693,7 +17693,7 @@
     "senses": "blindsight 30 ft., darkvision 120 ft., passive Perception 19",
     "languages": "Common, Draconic",
     "challenge_rating": "9",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
@@ -17751,7 +17751,7 @@
     "senses": "blindsight 30 ft., darkvision 120 ft., passive Perception 16",
     "languages": "Common, Draconic",
     "challenge_rating": "6",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
@@ -17816,7 +17816,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
@@ -17874,7 +17874,7 @@
     "senses": "blindsight 30 ft., darkvision 120 ft., passive Perception 17",
     "languages": "Common, Draconic",
     "challenge_rating": "7",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
@@ -17940,7 +17940,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
@@ -18005,7 +18005,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
@@ -18062,7 +18062,7 @@
     "senses": "blindsight 30 ft., darkvision 120 ft., passive Perception 18",
     "languages": "Common, Draconic",
     "challenge_rating": "10",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
@@ -18121,7 +18121,7 @@
     "senses": "blindsight 30 ft., darkvision 120 ft., passive Perception 18",
     "languages": "Common, Draconic",
     "challenge_rating": "9",
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
@@ -18185,7 +18185,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Multiattack",
         "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
@@ -18244,7 +18244,7 @@
         "attack_bonus": 0
       }
     ],
-    "actions": [
+    "actions_attributes": [
       {
         "name": "Slam",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.",

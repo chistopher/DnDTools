@@ -6,7 +6,8 @@ class MonstersController < ApplicationController
 
   def show
     @monster = Monster.find(params[:id])
-    puts @monster.attributes
+    puts @monster.actions.empty?
+    puts "aaaaaaaaaaaaaaaaaaaaaa"
   end
 
 end

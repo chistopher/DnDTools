@@ -1,9 +1,29 @@
 
 <h2><%= @monster.name %></h2>
 
-<% (@monster.attributes.reject {|k,v| k=="id" or k=="created_at" or k=="updated_at" or v==nil or v=="" } ).each do |key, value| %>
+<% (@monster.attributes.reject {|k,v| k=="id" or k=="created_at" or k=="updated_at" or k=="actions" or v==nil or v=="" } ).each do |key, value| %>
   <p>
     <strong><%= key %>:</strong>
     <%= value %>
   </p>
+<% end %>
+
+<% if not @monster.actions.empty? %>
+  <strong>Actions:</strong>
+  <% @monster.actions.each do |action|%>
+    <div class="card">
+      <div class="card-header">
+        <%= action.name %>
+      </div>
+      <div class="card-body">
+        <% (action.attributes.reject {|k,v| k=="id" or k=="created_at" or k=="updated_at" or k=="monster_id" or k=="name" or v==nil or v=="" } ).each do |key, value| %>
+          <p>
+            <strong><%= key %>:</strong>
+            <%= value %>
+          </p>
+        <% end %>
+      </div>
+    </div>
+    <br>
+  <% end %>
 <% end %>

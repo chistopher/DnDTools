@@ -10,26 +10,23 @@
 
   <body>
 
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-
-        <div class="navbar-header">
-          <%= link_to "DnD Tools", root_path, class: "navbar-brand" %>
-        </div>
-
-        <ul class="nav navbar-nav">
-          <li> <%= link_to "Quests", quests_path %> </li>
-          <li> <%= link_to "NPCs", npcs_path %> </li>
-          <li> <%= link_to "Spells", spells_path %> </li>
-          <li> <%= link_to "Monsters", monsters_path %> </li>
-        </ul>
-
-        <ul class="nav navbar-nav navbar-right">
-          <li> <%= link_to 'Master Login', welcome_login_path %> </li>
-        </ul>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="navbar-brand">
+        <%= link_to "DnD Tools", root_path, class: "navbar-brand" %>
       </div>
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <%= link_to "Quests", quests_path, class: "nav-link" %> </li>
+        <li class="nav-item"> <%= link_to "NPCs", npcs_path, class: "nav-link" %> </li>
+        <li class="nav-item"> <%= link_to "Spells", spells_path, class: "nav-link" %> </li>
+        <li class="nav-item"> <%= link_to "Monsters", monsters_path, class: "nav-link" %> </li>
+      </ul>
+
+      <ul class="navbar-nav navbar-right">
+          <li class="nav-item"> <%= link_to 'Master Login', welcome_login_path, class: "nav-link" %> </li>
+        </ul>
     </nav>
+    <br>
 
     <div id="main-container" class="container">
       <%= yield %>

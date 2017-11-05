@@ -46,5 +46,5 @@ end
 
 monsters = JSON.parse(File.read('./resources/5e-SRD-Monsters.json'))
 monsters.each do |monster|
-  Monster.create(monster.slice("name", "size", "typus", "subtype", "alignment", "armor_class", "hit_points", "hit_dice", "speed", "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "constitution_save", "intelligence_save", "wisdom_save", "history", "perception", "damage_vulnerabilities", "damage_resistances", "damage_immunities", "condition_immunities", "senses", "languages", "challenge_rating"))
+  Monster.create(monster.slice("name", "size", "typus", "subtype", "alignment", "armor_class", "hit_points", "hit_dice", "speed", "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "constitution_save", "intelligence_save", "wisdom_save", "history", "perception", "damage_vulnerabilities", "damage_resistances", "damage_immunities", "condition_immunities", "senses", "languages", "challenge_rating", "actions_attributes"))
 end

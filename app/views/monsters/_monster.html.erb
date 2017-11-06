@@ -1,11 +1,53 @@
 
 <h2><%= @monster.name %></h2>
+<br>
 
-<% (@monster.attributes.reject {|k,v| k=="id" or k=="created_at" or k=="updated_at" or k=="actions" or v==nil or v=="" } ).each do |key, value| %>
+<div class="container">
+  <div class="row">
+    <% [:strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma].each do |stat| %>
+      <div class="col">
+        <%= stat.capitalize %>
+      </div>
+    <% end %>
+  </div>
+  <div class="row">
+    <% [:strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma].each do |stat| %>
+      <div class="col">
+        <% val = @monster.send(stat) %>
+        <%= val %> (<%= sprintf("%+d", val/2-5) %>)
+      </div>
+    <% end %>
+  </div>
+</div>
+<br>
+
+<p>
+  <strong>Challenge Rating: </strong>
+  <%= @monster.challenge_rating %> (<%= @monster.experience %> XP)
+</p>
+
+<% notShow = [:strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma,
+  :name, :challenge_rating, :actions, :id, :created_at, :updated_at] %>
+<% (@monster.attributes.reject {|k,v| notShow.include? k.to_sym or v==nil or v=="" } ).each do |key, value| %>
   <p>
     <strong><%= key %>:</strong>
     <%= value %>
   </p>
+<% end %>
+
+<% if not @monster.specials.empty? %>
+  <strong>Special Abilities:</strong>
+  <% @monster.specials.each do |special|%>
+    <div class="card">
+      <div class="card-header">
+        <%= special.name %>
+      </div>
+      <div class="card-body">
+        <%= special.desc %>
+      </div>
+    </div>
+    <br>
+  <% end %>
 <% end %>
 
 <% if not @monster.actions.empty? %>
@@ -16,12 +58,22 @@
         <%= action.name %>
       </div>
       <div class="card-body">
-        <% (action.attributes.reject {|k,v| k=="id" or k=="created_at" or k=="updated_at" or k=="monster_id" or k=="name" or v==nil or v=="" } ).each do |key, value| %>
-          <p>
-            <strong><%= key %>:</strong>
-            <%= value %>
-          </p>
-        <% end %>
+        <%= action.desc %>
+      </div>
+    </div>
+    <br>
+  <% end %>
+<% end %>
+
+<% if not @monster.legendaries.empty? %>
+  <strong>Legendary Actions:</strong>
+  <% @monster.legendaries.each do |legendary|%>
+    <div class="card">
+      <div class="card-header">
+        <%= legendary.name %>
+      </div>
+      <div class="card-body">
+        <%= legendary.desc %>
       </div>
     </div>
     <br>

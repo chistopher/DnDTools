@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171105215235) do
+ActiveRecord::Schema.define(version: 20171106174035) do
 
-  create_table "actions", force: :cascade do |t|
+  create_table "monster_actions", force: :cascade do |t|
     t.integer "monster_id"
     t.string "name"
     t.text "desc"
@@ -21,7 +21,27 @@ ActiveRecord::Schema.define(version: 20171105215235) do
     t.integer "damage_bonus"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["monster_id"], name: "index_actions_on_monster_id"
+    t.index ["monster_id"], name: "index_monster_actions_on_monster_id"
+  end
+
+  create_table "monster_legendaries", force: :cascade do |t|
+    t.integer "monster_id"
+    t.string "name"
+    t.text "desc"
+    t.integer "attack_bonus"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["monster_id"], name: "index_monster_legendaries_on_monster_id"
+  end
+
+  create_table "monster_specials", force: :cascade do |t|
+    t.integer "monster_id"
+    t.string "name"
+    t.text "desc"
+    t.integer "attack_bonus"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["monster_id"], name: "index_monster_specials_on_monster_id"
   end
 
   create_table "monsters", force: :cascade do |t|

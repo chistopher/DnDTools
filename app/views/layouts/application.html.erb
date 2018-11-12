@@ -22,13 +22,25 @@
         <li class="nav-item"> <%= link_to "Monsters", monsters_path, class: "nav-link" %> </li>
       </ul>
 
+      <% if user_signed_in? %>
+        <div class="navbar-text"> Logged in as <strong><%= current_user.email %></strong>. </div>
+      <% end %>
       <ul class="navbar-nav navbar-right">
-          <li class="nav-item"> <%= link_to 'Master Login', welcome_login_path, class: "nav-link" %> </li>
-        </ul>
+        <% if user_signed_in? %>
+          <li class="nav-item"> <%= link_to 'Edit profile', edit_user_registration_path, :class => 'nav-link' %> </li>
+          <li class="nav-item"> <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'nav-link'  %> </li>
+        <% else %>
+          <li class="nav-item"><%= link_to "Sign up", new_user_registration_path, :class => 'nav-link'  %> </li>
+          <li class="nav-item"><%= link_to "Login", new_user_session_path, :class => 'nav-link'  %> </li>
+        <% end %>
+        <!-- <li class="nav-item"> <%= link_to 'Master Login', welcome_login_path, class: "nav-link" %> </li> -->
+      </ul>
     </nav>
     <br>
 
     <div id="main-container" class="container">
+      <% if notice %> <p class="alert alert-success"><%= notice %></p> <% end %>
+      <% if alert %> <p class="alert alert-danger"><%= alert %></p> <% end %>
       <%= yield %>
     </div>
   </body>
